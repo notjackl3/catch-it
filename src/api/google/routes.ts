@@ -62,9 +62,6 @@ export type ComputeRoutesParams = {
 
 export async function computeRoutes(params: ComputeRoutesParams): Promise<RouteOption[]> {
   const url = 'https://routes.googleapis.com/directions/v2:computeRoutes';
-
-  // NOTE: travelMode/transit support can vary. We're sending TRANSIT because it's your target.
-  // If Google returns errors/empty routes in your region, you can change travelMode here.
   const body: any = {
     origin: { 
         location: { 
@@ -77,7 +74,7 @@ export async function computeRoutes(params: ComputeRoutesParams): Promise<RouteO
             latitude: params.destination.lat, 
             longitude: params.destination.lng } },
     },
-    travelMode: 'TRANSIT',
+    travelMode: 'TRANSIT', // prioritize transit where available
     computeAlternativeRoutes: true,
     languageCode: 'en',
     units: 'METRIC',

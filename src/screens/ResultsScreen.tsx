@@ -16,62 +16,125 @@ function fmtDuration(seconds?: number): string {
   return `${h}h ${m}m`;
 }
 
+function fmtDateTime(iso: string): string {
+  const d = new Date(iso);
+  return Number.isFinite(d.getTime()) ? d.toLocaleString() : iso;
+}
+
+function estimateDepartMs(arriveByISO: string, durationSeconds?: number): number | undefined {
+  if (!durationSeconds) return undefined;
+  const arriveMs = new Date(arriveByISO).getTime();
+  if (!Number.isFinite(arriveMs)) return undefined;
+  return arriveMs - durationSeconds * 1000;
+}
+
 export function ResultsScreen() {
   const route = useRoute<R>();
-  const { origin, destination, routes } = route.params;
-  const [expandedId, setExpandedId] = useState<string | null>(routes[0]?.id ?? null);
+  const { stops, legs } = route.params;
+  const start = stops[0]?.place;
+  const end = stops[stops.length - 1]?.place;
+
+  const [expandedKey, setExpandedKey] = useState<string | null>(() => {
+    const firstLeg = legs[0];
+    const firstRoute = firstLeg?.routes?.[0];
+    return firstLeg && firstRoute ? `${firstLeg.id}:${firstRoute.id}` : null;
+  });
 
   return (
     <ScrollView style={styles.container} contentContainerStyle={styles.content}>
       <View style={styles.header}>
         <Text style={styles.title} numberOfLines={2}>
-          {origin.name} → {destination.name}
+          {start?.name ?? 'Start'} → {end?.name ?? 'End'}
         </Text>
         <Text style={styles.sub} numberOfLines={2}>
-          {origin.address ?? ''}{origin.address && destination.address ? ' • ' : ''}{destination.address ?? ''}
+          {start?.address ?? ''}{start?.address && end?.address ? ' • ' : ''}{end?.address ?? ''}
         </Text>
       </View>
 
-      {routes.length === 0 ? (
+      {legs.length === 0 ? (
         <Text style={styles.empty}>
-          No routes returned. If you’re expecting transit, you may need to adjust the request in
-          `src/api/google/routes.ts` (travelMode/field mask) or verify API support in your region.
+          No legs were computed. Add at least 2 stops and try again.
         </Text>
       ) : null}
 
-      {routes.map((r, idx) => (
-        <Pressable
-          key={r.id}
-          style={styles.card}
-          onPress={() => setExpandedId((cur) => (cur === r.id ? null : r.id))}
-        >
-          <View style={styles.row}>
-            <Text style={styles.cardTitle}>Option {idx + 1}</Text>
-            <Text style={styles.cardTitle}>{fmtDuration(r.durationSeconds)}</Text>
-          </View>
-          <Text style={styles.meta}>
-            {typeof r.distanceMeters === 'number' ? `${(r.distanceMeters / 1000).toFixed(1)} km` : '—'}
-          </Text>
-          <Text style={styles.meta} numberOfLines={2}>
-            {r.steps.slice(0, 2).map((s) => s.instruction).join(' • ') || 'No step instructions returned'}
-          </Text>
+      {legs.map((leg, legIdx) => {
+        const from = stops.find((s) => s.id === leg.fromStopId)?.place;
+        const to = stops.find((s) => s.id === leg.toStopId)?.place;
 
-          {expandedId === r.id ? (
-            <View style={styles.steps}>
-              <Text style={styles.stepsTitle}>Steps</Text>
-              {r.steps.length === 0 ? (
-                <Text style={styles.stepText}>No step instructions returned.</Text>
-              ) : (
-                r.steps.map((s, i) => (
-                  <Text key={i} style={styles.stepText}>
-                    {i + 1}. {s.instruction}
+        // Feasibility check for this leg (except the first leg): ensure we can depart after arriving + dwell.
+        let feasibilityWarning: string | null = null;
+        if (legIdx > 0) {
+          const prevLeg = legs[legIdx - 1];
+          const prevArriveMs = new Date(prevLeg.arriveByISO).getTime();
+          const neededDepartMs = prevArriveMs + leg.dwellMinutesAtFromStop * 60_000;
+          const chosen = leg.routes[0];
+          const estDepartMs = estimateDepartMs(leg.arriveByISO, chosen?.durationSeconds);
+          if (Number.isFinite(neededDepartMs) && estDepartMs !== undefined && estDepartMs < neededDepartMs) {
+            feasibilityWarning =
+              `Tight schedule: this leg likely needs you to depart around ${new Date(estDepartMs).toLocaleString()}, ` +
+              `but you planned to arrive at the previous stop by ${fmtDateTime(prevLeg.arriveByISO)} ` +
+              `(+ ${leg.dwellMinutesAtFromStop} min).`;
+          }
+        }
+
+        return (
+          <View key={leg.id} style={styles.legBlock}>
+            <Text style={styles.legTitle}>
+              Leg {legIdx + 1}: {from?.name ?? 'From'} → {to?.name ?? 'To'}
+            </Text>
+            <Text style={styles.legMeta}>
+              Arrive by: {fmtDateTime(leg.arriveByISO)}
+              {legIdx > 0 ? ` • Dwell at start: ${leg.dwellMinutesAtFromStop} min` : ''}
+            </Text>
+            {feasibilityWarning ? <Text style={styles.warn}>{feasibilityWarning}</Text> : null}
+
+            {leg.routes.length === 0 ? (
+              <Text style={styles.empty}>
+                No routes returned for this leg. You may need to adjust `travelMode`/field mask in
+                `src/api/google/routes.ts` or verify API support in your region.
+              </Text>
+            ) : null}
+
+            {leg.routes.map((r, idx) => {
+              const key = `${leg.id}:${r.id}`;
+              const expanded = expandedKey === key;
+              return (
+                <Pressable
+                  key={key}
+                  style={styles.card}
+                  onPress={() => setExpandedKey((cur) => (cur === key ? null : key))}
+                >
+                  <View style={styles.row}>
+                    <Text style={styles.cardTitle}>Option {idx + 1}</Text>
+                    <Text style={styles.cardTitle}>{fmtDuration(r.durationSeconds)}</Text>
+                  </View>
+                  <Text style={styles.meta}>
+                    {typeof r.distanceMeters === 'number' ? `${(r.distanceMeters / 1000).toFixed(1)} km` : '—'}
                   </Text>
-                ))
-              )}
-            </View>
-          ) : null}
-        </Pressable>
-      ))}
+                  <Text style={styles.meta} numberOfLines={2}>
+                    {r.steps.slice(0, 2).map((s) => s.instruction).join(' • ') || 'No step instructions returned'}
+                  </Text>
+
+                  {expanded ? (
+                    <View style={styles.steps}>
+                      <Text style={styles.stepsTitle}>Steps</Text>
+                      {r.steps.length === 0 ? (
+                        <Text style={styles.stepText}>No step instructions returned.</Text>
+                      ) : (
+                        r.steps.map((s, i) => (
+                          <Text key={i} style={styles.stepText}>
+                            {i + 1}. {s.instruction}
+                          </Text>
+                        ))
+                      )}
+                    </View>
+                  ) : null}
+                </Pressable>
+              );
+            })}
+          </View>
+        );
+      })}
     </ScrollView>
   );
 }
@@ -83,6 +146,10 @@ const styles = StyleSheet.create({
   title: { fontSize: 16, fontWeight: '700' },
   sub: { fontSize: 12, color: '#666' },
   empty: { color: '#b00020', marginTop: 8 },
+  warn: { color: '#9a3412', marginTop: 6 },
+  legBlock: { gap: 8, paddingTop: 6 },
+  legTitle: { fontSize: 15, fontWeight: '800' },
+  legMeta: { fontSize: 12, color: '#666' },
   card: {
     borderWidth: 1,
     borderColor: '#eee',

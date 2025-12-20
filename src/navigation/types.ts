@@ -1,14 +1,23 @@
 import type { PlaceDetails } from '../api/google/places';
-import type { RouteOption, TimeMode } from '../api/google/routes';
+import type { RouteOption } from '../api/google/routes';
 
 export type RootStackParamList = {
   PlanTrip: undefined;
   Results: {
-    origin: PlaceDetails;
-    destination: PlaceDetails;
-    timeMode: TimeMode;
-    timeISO: string;
-    routes: RouteOption[];
+    stops: Array<{
+      id: string;
+      place: PlaceDetails;
+      arriveByISO?: string; // undefined for the first stop (start)
+      dwellMinutes?: number; // only used when there is a next leg
+    }>;
+    legs: Array<{
+      id: string;
+      fromStopId: string;
+      toStopId: string;
+      arriveByISO: string;
+      dwellMinutesAtFromStop: number;
+      routes: RouteOption[];
+    }>;
   };
 };
 
