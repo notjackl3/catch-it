@@ -1,4 +1,4 @@
-import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Linking, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useRoute } from '@react-navigation/native';
 import type { RouteProp } from '@react-navigation/native';
 import { useState } from 'react';
@@ -43,6 +43,32 @@ function estimateDepartMs(arriveByISO: string, durationSeconds?: number): number
   const arriveMs = new Date(arriveByISO).getTime();
   if (!Number.isFinite(arriveMs)) return undefined;
   return arriveMs - durationSeconds * 1000;
+}
+
+function googleMapsDirectionsUrl(params: {
+  origin: { lat: number; lng: number };
+  destination: { lat: number; lng: number };
+  travelMode: 'transit' | 'walking' | 'driving';
+  departureTimeISO?: string;
+}): string {
+  const origin = `${params.origin.lat},${params.origin.lng}`;
+  const destination = `${params.destination.lat},${params.destination.lng}`;
+
+  const u = new URL('https://www.google.com/maps/dir/');
+  u.searchParams.set('api', '1');
+  u.searchParams.set('origin', origin);
+  u.searchParams.set('destination', destination);
+  u.searchParams.set('travelmode', params.travelMode);
+  u.searchParams.set('dir_action', 'navigate');
+
+  if (params.departureTimeISO) {
+    const ms = new Date(params.departureTimeISO).getTime();
+    if (Number.isFinite(ms)) {
+      u.searchParams.set('departure_time', String(Math.floor(ms / 1000)));
+    }
+  }
+
+  return u.toString();
 }
 
 export function ResultsScreen() {
@@ -128,6 +154,7 @@ export function ResultsScreen() {
               const key = `${leg.id}:${r.id}`;
               // If an option is chosen for this leg, keep it always expanded.
               const expanded = Boolean(chosenRouteId) || expandedKey === key;
+              const canLink = Boolean(chosenRouteId) && Boolean(from) && Boolean(to);
               return (
                 <Pressable
                   key={key}
@@ -181,6 +208,25 @@ export function ResultsScreen() {
                       }
                     >
                       <Text style={styles.chooseButtonText}>Choose this option</Text>
+                    </Pressable>
+                  ) : null}
+
+                  {canLink ? (
+                    <Pressable
+                      style={styles.mapsLinkButton}
+                      onPress={async () => {
+                        if (!from || !to) return;
+                        const url = googleMapsDirectionsUrl({
+                          origin: from.location,
+                          destination: to.location,
+                          travelMode: 'transit',
+                          departureTimeISO: r.startAtISO ?? startAt.startAtISO,
+                        });
+                        const ok = await Linking.canOpenURL(url);
+                        if (ok) await Linking.openURL(url);
+                      }}
+                    >
+                      <Text style={styles.mapsLinkText}>Open in Google Maps</Text>
                     </Pressable>
                   ) : null}
                 </Pressable>
@@ -249,6 +295,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   chooseButtonText: { color: '#111', fontWeight: '800' },
+  mapsLinkButton: {
+    marginTop: 10,
+  },
+  mapsLinkText: { color: '#2563eb', fontWeight: '800' },
 });
 
 

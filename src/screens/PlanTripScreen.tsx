@@ -6,7 +6,8 @@ import {
   Text,
   TextInput,
   View,
-  ScrollView
+  ScrollView,
+  Platform,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -25,12 +26,13 @@ import type { RootStackParamList } from '../navigation/types';
 type Nav = NativeStackNavigationProp<RootStackParamList, 'PlanTrip'>;
 
 function formatTime(d: Date): string {
-    return d.toLocaleTimeString([], {
-        day: 'numeric',
-        month: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit',
-    });
+  // Show date + time in a compact way (works across iOS/Android).
+  return d.toLocaleString([], {
+    month: 'numeric',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+  });
 }
 
 type StopDraft = {
@@ -204,6 +206,36 @@ export function PlanTripScreen() {
         </Pressable>
       </View>
 
+      {startTimeMode === 'custom' ? (
+        <View style={styles.inlinePickerBlock}>
+          <Pressable
+            style={styles.timeButton}
+            onPress={() =>
+              setActiveDatePicker((cur) => (cur?.kind === 'start' ? null : { kind: 'start' }))
+            }
+          >
+            <Text style={styles.timeButtonText}>{formatTime(customStartAt)}</Text>
+          </Pressable>
+
+          {activeDatePicker?.kind === 'start' ? (
+            <View style={styles.datePickerRow}>
+              <DateTimePicker
+                value={customStartAt}
+                mode="datetime"
+                display={Platform.OS === 'ios' ? 'compact' : 'default'}
+                onChange={(_, d) => {
+                  if (d) setCustomStartAt(d);
+                  // Keep open until user taps Done (Android system modal closes itself anyway).
+                }}
+              />
+              <Pressable style={styles.doneButton} onPress={() => setActiveDatePicker(null)}>
+                <Text style={styles.doneButtonText}>Done</Text>
+              </Pressable>
+            </View>
+          ) : null}
+        </View>
+      ) : null}
+
       {stops.map((s, idx) => {
         const isStart = idx === 0;
         const isLast = idx === stops.length - 1;
@@ -235,15 +267,6 @@ export function PlanTripScreen() {
               autoCapitalize="none"
             />
 
-            {startTimeMode === 'custom' ? (
-            <Pressable
-                  style={styles.timeButton}
-                  onPress={() => setActiveDatePicker({ kind: 'stop', stopIndex: idx })}
-                >
-                  <Text style={styles.timeButtonText}>{formatTime(s.arriveBy ?? new Date())}</Text>
-            </Pressable>
-            ) : null}
-
             {activeStopIndex === idx && acQuery.isFetching ? <ActivityIndicator /> : null}
             {activeStopIndex === idx
               ? suggestions.slice(0, 5).map((p) => (
@@ -262,10 +285,34 @@ export function PlanTripScreen() {
                 <Text style={styles.label}>Arrive by</Text>
                 <Pressable
                   style={styles.timeButton}
-                  onPress={() => setActiveDatePicker({ kind: 'stop', stopIndex: idx })}
+                  onPress={() =>
+                    setActiveDatePicker((cur) =>
+                      cur?.kind === 'stop' && cur.stopIndex === idx ? null : { kind: 'stop', stopIndex: idx }
+                    )
+                  }
                 >
                   <Text style={styles.timeButtonText}>{formatTime(s.arriveBy ?? new Date())}</Text>
                 </Pressable>
+
+                {activeDatePicker?.kind === 'stop' && activeDatePicker.stopIndex === idx ? (
+                  <View style={styles.datePickerRow}>
+                    <DateTimePicker
+                      value={s.arriveBy ?? new Date()}
+                      mode="datetime"
+                      display={Platform.OS === 'ios' ? 'compact' : 'default'}
+                      onChange={(_, d) => {
+                        if (!d) return;
+                        setStops((cur) =>
+                          cur.map((x, i) => (i === idx ? { ...x, arriveBy: d } : x))
+                        );
+                        // Keep open until user taps Done.
+                      }}
+                    />
+                    <Pressable style={styles.doneButton} onPress={() => setActiveDatePicker(null)}>
+                      <Text style={styles.doneButtonText}>Done</Text>
+                    </Pressable>
+                  </View>
+                ) : null}
 
                 {!isLast ? (
                   <>
@@ -296,30 +343,6 @@ export function PlanTripScreen() {
         <Text style={styles.addText}>+ Add stop</Text>
       </Pressable>
 
-      {activeDatePicker ? (
-        <DateTimePicker
-          value={
-            activeDatePicker.kind === 'start'
-              ? customStartAt
-              : (stops[activeDatePicker.stopIndex]?.arriveBy ?? new Date())
-          }
-          mode="datetime"
-          onChange={(_, d) => {
-            const current = activeDatePicker;
-            setActiveDatePicker(null);
-            if (!d) return;
-
-            if (current.kind === 'start') {
-              setCustomStartAt(d);
-              return;
-            }
-
-            const idx = current.stopIndex;
-            setStops((cur) => cur.map((x, i) => (i === idx ? { ...x, arriveBy: d } : x)));
-          }}
-        />
-      ) : null}
-
       {error ? <Text style={styles.error}>{error}</Text> : null}
 
       <Pressable
@@ -337,6 +360,21 @@ const styles = StyleSheet.create({
   container: { flex: 1, padding: 16, gap: 8, backgroundColor: '#fff' },
   title: { fontSize: 18, fontWeight: '800', marginBottom: 12 },
   row: { flexDirection: 'row', gap: 10, marginBottom: 8 },
+  inlinePickerBlock: { gap: 8, marginBottom: 10 },
+  datePickerRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    transform: [{ scale: 0.8 }],
+    marginLeft: -40,
+  },
+  doneButton: {
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    borderRadius: 10,
+    backgroundColor: '#2563eb',
+  },
+  doneButtonText: { color: '#fff', fontWeight: '800' },
   pill: {
     flex: 1,
     paddingVertical: 5,
@@ -348,7 +386,7 @@ const styles = StyleSheet.create({
   pillActive: { backgroundColor: '#111', borderColor: '#111' },
   pillText: { color: '#111' },
   pillTextActive: { color: '#fff' },
-  stopCard: { borderWidth: 1, borderColor: '#eee', borderRadius: 12, padding: 12, gap: 8, marginBottom: 20 },
+  stopCard: { borderWidth: 1, borderColor: '#aaa', borderRadius: 12, padding: 16, gap: 8, marginBottom: 20 },
   stopHeaderRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   stopTitle: { fontWeight: '800' },
   removeText: { color: '#b00020', fontWeight: '700' },
@@ -384,7 +422,6 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     paddingVertical: 12,
     alignItems: 'center',
-    marginBottom: 12
   },
   addText: { fontWeight: '800' },
   error: { color: '#b00020', marginTop: 6 },

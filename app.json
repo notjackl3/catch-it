@@ -39,6 +39,12 @@
         "projectId": "2c3d313c-970e-4861-9046-14f86983db7f"
       }
     },
-    "owner": "notjackl3"
+    "owner": "notjackl3",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/2c3d313c-970e-4861-9046-14f86983db7f"
+    }
   }
 }
