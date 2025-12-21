@@ -7,6 +7,21 @@ import type { RootStackParamList } from '../navigation/types';
 
 type R = RouteProp<RootStackParamList, 'Results'>;
 
+function renderBoldTokens(line: string): Array<{ text: string; bold: boolean }> {
+  // regex to find all times and numbers
+  const re = /(\b\d{1,2}:\d{2}\s?(?:AM|PM)?\b|\b\d+\b)/gi;
+  const out: Array<{ text: string; bold: boolean }> = [];
+  let last = 0;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(line)) !== null) {
+    if (m.index > last) out.push({ text: line.slice(last, m.index), bold: false });
+    out.push({ text: m[0], bold: true });
+    last = m.index + m[0].length;
+  }
+  if (last < line.length) out.push({ text: line.slice(last), bold: false });
+  return out.length ? out : [{ text: line, bold: false }];
+}
+
 function fmtDuration(seconds?: number): string {
   if (!seconds) return '—';
   const mins = Math.round(seconds / 60);
@@ -18,7 +33,9 @@ function fmtDuration(seconds?: number): string {
 
 function fmtDateTime(iso: string): string {
   const d = new Date(iso);
-  return Number.isFinite(d.getTime()) ? d.toLocaleString() : iso;
+  return Number.isFinite(d.getTime())
+    ? d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+    : iso;
 }
 
 function estimateDepartMs(arriveByISO: string, durationSeconds?: number): number | undefined {
@@ -34,6 +51,9 @@ export function ResultsScreen() {
   const start = stops[0]?.place;
   const end = stops[stops.length - 1]?.place;
 
+  // legId -> chosen routeId (within leg.routes)
+  const [chosenByLegId, setChosenByLegId] = useState<Record<string, string>>({});
+
   const [expandedKey, setExpandedKey] = useState<string | null>(() => {
     const firstLeg = legs[0];
     const firstRoute = firstLeg?.routes?.[0];
@@ -46,20 +66,23 @@ export function ResultsScreen() {
         <Text style={styles.title} numberOfLines={2}>
           {start?.name ?? 'Start'} → {end?.name ?? 'End'}
         </Text>
-        <Text style={styles.sub} numberOfLines={2}>
-          {start?.address ?? ''}{start?.address && end?.address ? ' • ' : ''}{end?.address ?? ''}
-        </Text>
       </View>
 
       {legs.length === 0 ? (
         <Text style={styles.empty}>
-          No legs were computed. Add at least 2 stops and try again.
+          No directions can be were computed. Add at least 2 stops and try again.
         </Text>
       ) : null}
 
       {legs.map((leg, legIdx) => {
         const from = stops.find((s) => s.id === leg.fromStopId)?.place;
         const to = stops.find((s) => s.id === leg.toStopId)?.place;
+        const nextLeg = legs[legIdx + 1];
+        const nextStop = stops.find((s) => s.id === nextLeg?.toStopId)?.place;
+        const chosenRouteId = chosenByLegId[leg.id];
+        const visibleRoutes = chosenRouteId
+          ? leg.routes.filter((r) => r.id === chosenRouteId)
+          : leg.routes;
 
         // Feasibility check for this leg (except the first leg): ensure we can depart after arriving + dwell.
         let feasibilityWarning: string | null = null;
@@ -67,25 +90,28 @@ export function ResultsScreen() {
           const prevLeg = legs[legIdx - 1];
           const prevArriveMs = new Date(prevLeg.arriveByISO).getTime();
           const neededDepartMs = prevArriveMs + leg.dwellMinutesAtFromStop * 60_000;
-          const chosen = leg.routes[0];
+          const chosen = (chosenRouteId ? leg.routes.find((r) => r.id === chosenRouteId) : leg.routes[0]) ?? leg.routes[0];
           const estDepartMs = estimateDepartMs(leg.arriveByISO, chosen?.durationSeconds);
           if (Number.isFinite(neededDepartMs) && estDepartMs !== undefined && estDepartMs < neededDepartMs) {
             feasibilityWarning =
-              `Tight schedule: this leg likely needs you to depart around ${new Date(estDepartMs).toLocaleString()}, ` +
+              `Tight schedule! This stop needs you to depart around ${new Date(estDepartMs).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}, ` +
               `but you planned to arrive at the previous stop by ${fmtDateTime(prevLeg.arriveByISO)} ` +
-              `(+ ${leg.dwellMinutesAtFromStop} min).`;
+              `(+${leg.dwellMinutesAtFromStop} min).`;
           }
         }
 
         return (
           <View key={leg.id} style={styles.legBlock}>
-            <Text style={styles.legTitle}>
-              Leg {legIdx + 1}: {from?.name ?? 'From'} → {to?.name ?? 'To'}
+            {nextLeg && nextLeg.dwellMinutesAtFromStop > 0 ? (
+            <Text style={styles.legTiming}>
+                Arrive at {to?.name ?? 'this stop'} at {fmtDateTime(leg.arriveByISO)} and stay for{' '}
+                {nextLeg.dwellMinutesAtFromStop} min, then go to {nextStop?.name ?? 'next stop'}
             </Text>
-            <Text style={styles.legMeta}>
-              Arrive by: {fmtDateTime(leg.arriveByISO)}
-              {legIdx > 0 ? ` • Dwell at start: ${leg.dwellMinutesAtFromStop} min` : ''}
+            ) : (
+            <Text style={styles.legTiming}>
+                Arrive at {to?.name ?? 'this stop'} at {fmtDateTime(leg.arriveByISO)}
             </Text>
+            )}
             {feasibilityWarning ? <Text style={styles.warn}>{feasibilityWarning}</Text> : null}
 
             {leg.routes.length === 0 ? (
@@ -95,43 +121,86 @@ export function ResultsScreen() {
               </Text>
             ) : null}
 
-            {leg.routes.map((r, idx) => {
+            {visibleRoutes.map((r, idx) => {
               const key = `${leg.id}:${r.id}`;
-              const expanded = expandedKey === key;
+              // If an option is chosen for this leg, keep it always expanded.
+              const expanded = Boolean(chosenRouteId) || expandedKey === key;
               return (
                 <Pressable
                   key={key}
                   style={styles.card}
-                  onPress={() => setExpandedKey((cur) => (cur === key ? null : key))}
+                  onPress={() => {
+                    if (chosenRouteId) return; // chosen option stays expanded
+                    setExpandedKey((cur) => (cur === key ? null : key));
+                  }}
                 >
+                  <Text style={styles.cardRouteLine} numberOfLines={2}>
+                    {from?.name ?? 'From'} → {to?.name ?? 'To'}
+                  </Text>
                   <View style={styles.row}>
-                    <Text style={styles.cardTitle}>Option {idx + 1}</Text>
+                    <Text style={styles.cardTitle}>
+                      {chosenRouteId ? 'Chosen option' : `Option ${idx + 1}`}
+                    </Text>
                     <Text style={styles.cardTitle}>{fmtDuration(r.durationSeconds)}</Text>
                   </View>
                   <Text style={styles.meta}>
                     {typeof r.distanceMeters === 'number' ? `${(r.distanceMeters / 1000).toFixed(1)} km` : '—'}
                   </Text>
-                  <Text style={styles.meta} numberOfLines={2}>
-                    {r.steps.slice(0, 2).map((s) => s.instruction).join(' • ') || 'No step instructions returned'}
-                  </Text>
 
                   {expanded ? (
                     <View style={styles.steps}>
-                      <Text style={styles.stepsTitle}>Steps</Text>
-                      {r.steps.length === 0 ? (
-                        <Text style={styles.stepText}>No step instructions returned.</Text>
+                      {r.keyInstructions.length === 0 ? (
+                        <Text style={styles.stepText}>No key instructions returned.</Text>
                       ) : (
-                        r.steps.map((s, i) => (
+                        r.keyInstructions.map((line, i) => (
                           <Text key={i} style={styles.stepText}>
-                            {i + 1}. {s.instruction}
+                            <Text style={styles.bold}>{i + 1}</Text>
+                            <Text style={styles.stepText}> - </Text>
+                            {renderBoldTokens(line).map((t, j) => (
+                              <Text key={j} style={t.bold ? styles.bold : styles.stepText}>
+                                {t.text}
+                              </Text>
+                            ))}
                           </Text>
                         ))
                       )}
                     </View>
                   ) : null}
+
+                  {!chosenRouteId ? (
+                    <Pressable
+                      style={styles.chooseButton}
+                      onPress={() =>
+                        setChosenByLegId((cur) => ({
+                          ...cur,
+                          [leg.id]: r.id,
+                        }))
+                      }
+                    >
+                      <Text style={styles.chooseButtonText}>Choose this option</Text>
+                    </Pressable>
+                  ) : null}
                 </Pressable>
               );
             })}
+
+            <View style={styles.legHeaderRow}>
+              {chosenRouteId ? (
+                <Pressable
+                  onPress={() =>
+                    setChosenByLegId((cur) => {
+                      const next = { ...cur };
+                      delete next[leg.id];
+                      // When switching back to multi-option mode, collapse this leg by default.
+                      setExpandedKey((prev) => (prev?.startsWith(`${leg.id}:`) ? null : prev));
+                      return next;
+                    })
+                  }
+                >
+                  <Text style={styles.changeText}>Change</Text>
+                </Pressable>
+              ) : null}
+            </View>
           </View>
         );
       })}
@@ -148,8 +217,10 @@ const styles = StyleSheet.create({
   empty: { color: '#b00020', marginTop: 8 },
   warn: { color: '#9a3412', marginTop: 6 },
   legBlock: { gap: 8, paddingTop: 6 },
-  legTitle: { fontSize: 15, fontWeight: '800' },
+  legHeaderRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 12 },
+  legTitle: { fontSize: 12, fontWeight: '800' },
   legMeta: { fontSize: 12, color: '#666' },
+  changeText: { color: '#fff', backgroundColor: '#2563eb', paddingVertical: 10, paddingHorizontal: 12, borderRadius: 12, fontSize: 12, fontWeight: '800' },
   card: {
     borderWidth: 1,
     borderColor: '#eee',
@@ -159,11 +230,22 @@ const styles = StyleSheet.create({
     gap: 6,
   },
   row: { flexDirection: 'row', justifyContent: 'space-between', gap: 12 },
-  cardTitle: { fontWeight: '700' },
+  cardTitle: { fontSize: 20, fontWeight: '700'},
+  cardRouteLine: { color: '#111', fontWeight: '700' },
   meta: { color: '#444' },
   steps: { marginTop: 8, gap: 6 },
   stepsTitle: { fontWeight: '800' },
   stepText: { color: '#111' },
+  legTiming: { color: '#4169e1' },
+  bold: { fontWeight: '600', color: '#111'},
+  chooseButton: {
+    marginTop: 10,
+    backgroundColor: '#80ef80',
+    paddingVertical: 10,
+    borderRadius: 10,
+    alignItems: 'center',
+  },
+  chooseButtonText: { color: '#111', fontWeight: '800' },
 });
 
 

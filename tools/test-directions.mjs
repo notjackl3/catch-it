@@ -57,10 +57,21 @@ function usageAndExit(msg) {
       'Optional:',
       '  --mode TRANSIT|DRIVE|WALK|BICYCLE',
       '  --fieldMask "routes"   (default: routes)',
-      '  --raw                 (print raw JSON only)',
+      '  --out "path.json"     (write JSON to a file instead of printing)',
+      '  --raw                 (print raw JSON only; ignored if --out is set)',
     ].join('\n')
   );
   process.exit(1);
+}
+
+function ensureDirForFile(filePath) {
+  const dir = path.dirname(filePath);
+  fs.mkdirSync(dir, { recursive: true });
+}
+
+function defaultOutPath() {
+  const ts = new Date().toISOString().replace(/[:.]/g, '-');
+  return path.resolve(process.cwd(), 'tmp', `routes-${ts}.json`);
 }
 
 async function fetchJson(url, init) {
@@ -143,6 +154,7 @@ async function main() {
   const apiKey = process.env.EXPO_PUBLIC_GOOGLE_API_KEY;
   if (!apiKey) usageAndExit('Missing env var EXPO_PUBLIC_GOOGLE_API_KEY');
 
+  const outPath = argValue('--out');
   const arrive = argValue('--arrive');
   const depart = argValue('--depart');
   if (arrive && depart) usageAndExit('Use only one: --arrive or --depart');
@@ -172,8 +184,20 @@ async function main() {
 
   const resp = await computeRoutes(apiKey, body, fieldMask);
 
+  const jsonText = JSON.stringify(resp, null, 2) + '\n';
+
+  // If --out is set, always write to file and keep console short.
+  if (outPath) {
+    const resolved = path.resolve(process.cwd(), outPath);
+    ensureDirForFile(resolved);
+    fs.writeFileSync(resolved, jsonText, 'utf8');
+    console.log(`Wrote response to: ${resolved}`);
+    return;
+  }
+
+  // Default: allow printing raw JSON (for piping to jq, etc.)
   if (raw) {
-    process.stdout.write(JSON.stringify(resp, null, 2) + '\n');
+    process.stdout.write(jsonText);
     return;
   }
 
@@ -195,7 +219,9 @@ async function main() {
     },
   });
   console.log('--- Routes API response ---');
-  process.stdout.write(JSON.stringify(resp, null, 2) + '\n');
+  // If the response is too large, use --out (or pipe to a file):
+  //   npm run test:directions -- "A" "B" --arrive "..." --raw > out.json
+  process.stdout.write(jsonText);
 }
 
 main().catch((e) => {

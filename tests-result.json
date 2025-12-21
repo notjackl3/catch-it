@@ -1,0 +1,4699 @@
+{
+  "routes": [
+    {
+      "legs": [
+        {
+          "distanceMeters": 41186,
+          "duration": "9005s",
+          "staticDuration": "9005s",
+          "polyline": {
+            "encodedPolyline": "mnshGjekeNj@n@R_@xBdC@CKTyBgCgA`CkBvD[bBInA@lAt@|M@dBAvBOpEsHUeAKkA]_Ak@_Ay@qImJkAaA_B{@i@zCWr@S`@g@p@kAjAsA{De@_AiB}BoKwLySoU_@o@s@cC[mAC]}DeO]_Au@_A}BiBcAi@{@OcCKyAA_@MkDIIbEIp@Qh@aAzA}@uAu@y@uApBoF`JKDyAhB[V]iAWm@aAcBeEwFxAeC`DkFhEiHlDdFv@n@n@Vv@HfDHAPd@@?GR@C`CCAO?DgDeFMo@Qm@_@aAiAaDmEgCsDc@}@[qAMyACkA{BX[Jk@d@sD`Fa@`@kCrAk@VkA_Fc@iA{@uAi@m@kAy@c@EiBa@]HJk@{KwDk@?q@OW?Fc@sF_B{Ag@kBw@}@S_AEgAD{ATCLmBn@?WwB\\eA?gAQeAe@aAs@eNqO{MgOuP}RyGwIaNmPo@{@eMcOaMeOi@i@{E{Fc@o@SEmGeHo@eA{EmGsDiEaGqGiLaNiFoGoCaDy@iAyA_BwBpDwD~FwGfKaAzAkCpDq@bBw@fDOz@S[gAw@{@gAeGaHcCkCs@s@sGkHqCkCU_@eBcBw@cAp@aABQjBwCpLaUf@k@h@Yz@MbDQl@LZPf@f@dDkGoH{J}CyDi^gd@qLwNy@iAsDqEiGwHeJkKyNaPuH_JcIkJuAcBgG}GgDoDaCqCuWcZaE{EkMoNsD_E_BmB_AgA}DkEwFsGac@mf@o@q@QEqFeGG[_EwEoAsAM?kJwKqI_JEU{BaCeEuE{CcD]i@e@oAiC_KmDmNiA{EUsAeAeJiD_VUwAKOuBuNBYm@{EY{AOmAoDgS}AyMo@_FLE?LBVBAL`Ad@SAFEWhAc@~@s@TYHSz@w@h@WbGmAhTgH|@Kl@@lAPVDLPjAVv@@l@G|Ai@lB}@s@kEMQmDcV{Jcs@Ae@g@uDW_B}@}G`Bk@\\YpAmBhBwAXa@Tq@l@qCN]u@m@MB{AmAu@q@Gc@EMa@i@a@oAKu@aCkLi@kCSw@e@}@Y[w@e@q@S{@A]DcAZAUgAkHa@mCg@wCwCcUqBqNeAaHeAeIUkAqAsJSs@qAcKi@uDw@{F@]qAgKwEs\\oAoJqC_S{AiLGoACaDR}FT_CTgB~AkHLa@x@}DfA}Ep@uBB]fA}ENwAP{GCoBM_Bi@_ESs@a@y@mDcEYw@cAoGqAwJe@wD{AuK}G{g@}CoUGw@}DkY_CmQu@wFi@yDmE}\\q@{EBONBAAAKA@UD?GUH@C~SuD~MgD`TeGjYgIbPsE`GaBZG|@q@p@_B~@cDjAwEhAkDr@cA`@wA~@eCHgAFyAF_C[kF_@iAc@_EEW_@qE]sAm@wEe@mG[aAm@iFUmDi@_Co@qFMy@a@qGe@gA{AiMW_Fc@qAi@mEMkDc@iA{@iH_A_La@uAs@yFEuBa@sAuA_LE{BsIct@cDoXc@}@eD_YGuCq@aCy@eGIgCk@oBw@gGAcBeA_FkC}SK{BI]FE?N[cCE@yFdB]LqA_KJEK?"
+          },
+          "startLocation": {
+            "latLng": {
+              "latitude": 43.522470399999996,
+              "longitude": -79.6887004
+            }
+          },
+          "endLocation": {
+            "latLng": {
+              "latitude": 43.649709900000005,
+              "longitude": -79.3820558
+            }
+          },
+          "steps": [
+            {
+              "distanceMeters": 118,
+              "staticDuration": "108s",
+              "polyline": {
+                "encodedPolyline": "mnshGjekeNj@n@R_@xBdC"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.522470399999996,
+                  "longitude": -79.6887004
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.521543799999996,
+                  "longitude": -79.6894465
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head southwest on Laird Rd toward Colonial Dr"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.1 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 4972,
+              "staticDuration": "1200s",
+              "polyline": {
+                "encodedPolyline": "qhshG|ikeNKTyBgCgA`CkBvD[bBInA@lAt@|M@dBAvBOpEsHUeAKkA]_Ak@_Ay@qImJkAaA_B{@i@zCWr@S`@g@p@kAjAsA{De@_AiB}BoKwLySoU_@o@s@cC[mAC]}DeO]_Au@_A}BiBcAi@{@OcCKyAA_@MkDIIbEIp@Qh@aAzA}@uAu@y@uApBoF`JKDyAhB[V]iAWm@aAcBeEwFxAeC`DkFhEiHlDdFv@n@n@Vv@HfDHAP"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.521532199999996,
+                  "longitude": -79.6894269
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.541577,
+                  "longitude": -79.681668
+                }
+              },
+              "navigationInstruction": {
+                "instructions": "Bus towards 36 S Ridgeway To South Common"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "5.0 km"
+                },
+                "staticDuration": {
+                  "text": "20 mins"
+                }
+              },
+              "transitDetails": {
+                "stopDetails": {
+                  "arrivalStop": {
+                    "name": "The Collegeway At South Millway",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.541577,
+                        "longitude": -79.681668
+                      }
+                    }
+                  },
+                  "arrivalTime": "2025-12-21T06:49:00Z",
+                  "departureStop": {
+                    "name": "Laird Rd At Colonial Dr (#1662)",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.521532199999996,
+                        "longitude": -79.6894269
+                      }
+                    }
+                  },
+                  "departureTime": "2025-12-21T06:29:00Z"
+                },
+                "localizedValues": {
+                  "arrivalTime": {
+                    "time": {
+                      "text": "1:49 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  },
+                  "departureTime": {
+                    "time": {
+                      "text": "1:29 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  }
+                },
+                "headsign": "36 S Ridgeway To South Common",
+                "transitLine": {
+                  "agencies": [
+                    {
+                      "name": "MiWay",
+                      "phoneNumber": "+1 905-615-4636",
+                      "uri": "http://www.miway.ca/"
+                    }
+                  ],
+                  "name": "Ridgeway",
+                  "color": "#d33517",
+                  "nameShort": "36",
+                  "textColor": "#ffffff",
+                  "vehicle": {
+                    "name": {
+                      "text": "Bus"
+                    },
+                    "type": "BUS",
+                    "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                  }
+                },
+                "stopCount": 19
+              },
+              "travelMode": "TRANSIT"
+            },
+            {
+              "distanceMeters": 6,
+              "staticDuration": "5s",
+              "polyline": {
+                "encodedPolyline": "udwhGnyieN?G"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.5413942,
+                  "longitude": -79.6816794
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.541393,
+                  "longitude": -79.6816407
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head east on South Millway toward The Collegeway"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "6 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 11,
+              "staticDuration": "10s",
+              "polyline": {
+                "encodedPolyline": "udwhGfyieNR@"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.541393,
+                  "longitude": -79.6816407
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.5412907,
+                  "longitude": -79.6816453
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right onto The Collegeway"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "11 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 56,
+              "staticDuration": "46s",
+              "polyline": {
+                "encodedPolyline": "adwhGhyieNC`C"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.5412907,
+                  "longitude": -79.6816453
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.5413109,
+                  "longitude": -79.6822966
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right\nDestination will be on the right"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "56 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 17972,
+              "staticDuration": "2640s",
+              "polyline": {
+                "encodedPolyline": "idwhGh}ieNO?DgDeFMo@Qm@_@aAiAaDmEgCsDc@}@[qAMyACkA{BX[Jk@d@sD`Fa@`@kCrAk@VkA_Fc@iA{@uAi@m@kAy@c@EiBa@]HJk@{KwDk@?q@OW?Fc@sF_B{Ag@kBw@}@S_AEgAD{ATCLmBn@?WwB\\eA?gAQeAe@aAs@eNqO{MgOuP}RyGwIaNmPo@{@eMcOaMeOi@i@{E{Fc@o@SEmGeHo@eA{EmGsDiEaGqGiLaNiFoGoCaDy@iAyA_BwBpDwD~FwGfKaAzAkCpDq@bBw@fDOz@S[gAw@{@gAeGaHcCkCs@s@sGkHqCkCU_@eBcBw@cAp@aABQjBwCpLaUf@k@h@Yz@MbDQl@LZPf@f@dDkGoH{J}CyDi^gd@qLwNy@iAsDqEiGwHeJkKyNaPuH_JcIkJuAcBgG}GgDoDaCqCuWcZaE{EkMoNsD_E_BmB_AgA}DkEwFsGac@mf@o@q@QEqFeGG[_EwEoAsAM?kJwKqI_JEU{BaCeEuE{CcD]i@e@oAiC_KmDmNiA{EUsAeAeJiD_VUwAKOuBuNBYm@{EY{AOmAoDgS}AyMo@_FLE"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.5413297,
+                  "longitude": -79.6822945
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6462307,
+                  "longitude": -79.55959240000001
+                }
+              },
+              "navigationInstruction": {
+                "instructions": "Bus towards 26 E Burnhamthorpe To Kipling Terminal"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "18.0 km"
+                },
+                "staticDuration": {
+                  "text": "44 mins"
+                }
+              },
+              "transitDetails": {
+                "stopDetails": {
+                  "arrivalStop": {
+                    "name": "The East Mall",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.6462307,
+                        "longitude": -79.55959240000001
+                      }
+                    }
+                  },
+                  "arrivalTime": "2025-12-21T07:45:00Z",
+                  "departureStop": {
+                    "name": "South Millway West Of The Collegeway",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.5413297,
+                        "longitude": -79.6822945
+                      }
+                    }
+                  },
+                  "departureTime": "2025-12-21T07:01:00Z"
+                },
+                "localizedValues": {
+                  "arrivalTime": {
+                    "time": {
+                      "text": "2:45 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  },
+                  "departureTime": {
+                    "time": {
+                      "text": "2:01 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  }
+                },
+                "headsign": "26 E Burnhamthorpe To Kipling Terminal",
+                "transitLine": {
+                  "agencies": [
+                    {
+                      "name": "MiWay",
+                      "phoneNumber": "+1 905-615-4636",
+                      "uri": "http://www.miway.ca/"
+                    }
+                  ],
+                  "name": "Burnhamthorpe",
+                  "color": "#d33517",
+                  "nameShort": "26",
+                  "textColor": "#ffffff",
+                  "vehicle": {
+                    "name": {
+                      "text": "Bus"
+                    },
+                    "type": "BUS",
+                    "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                  }
+                },
+                "stopCount": 53
+              },
+              "travelMode": "TRANSIT"
+            },
+            {
+              "distanceMeters": 29,
+              "staticDuration": "33s",
+              "polyline": {
+                "encodedPolyline": "}skiGz~qdNBVBAL`A"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.646229999999996,
+                  "longitude": -79.559663
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6461158,
+                  "longitude": -79.5600971
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head west on Burnhamthorpe Rd toward The East Mall"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "29 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 30,
+              "staticDuration": "32s",
+              "polyline": {
+                "encodedPolyline": "gskiGrardNd@S"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6461158,
+                  "longitude": -79.5600971
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6459316,
+                  "longitude": -79.5600029
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_LEFT",
+                "instructions": "Turn left onto The East Mall\nDestination will be on the right"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "30 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 10276,
+              "staticDuration": "1288s",
+              "polyline": {
+                "encodedPolyline": "crkiGfardNEWhAc@~@s@TYHSz@w@h@WbGmAhTgH|@Kl@@lAPVDLPjAVv@@l@G|Ai@lB}@s@kEMQmDcV{Jcs@Ae@g@uDW_B}@}G`Bk@\\YpAmBhBwAXa@Tq@l@qCN]u@m@MB{AmAu@q@Gc@EMa@i@a@oAKu@aCkLi@kCSw@e@}@Y[w@e@q@S{@A]DcAZAUgAkHa@mCg@wCwCcUqBqNeAaHeAeIUkAqAsJSs@qAcKi@uDw@{F@]qAgKwEs\\oAoJqC_S{AiLGoACaDR}FT_CTgB~AkHLa@x@}DfA}Ep@uBB]fA}ENwAP{GCoBM_Bi@_ESs@a@y@mDcEYw@cAoGqAwJe@wD{AuK}G{g@}CoUGw@}DkY_CmQu@wFi@yDmE}\\q@{EBONB"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.645938,
+                  "longitude": -79.5600355
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6562039,
+                  "longitude": -79.4526247
+                }
+              },
+              "navigationInstruction": {
+                "instructions": "Bus towards Bloor-Danforth to Kennedy Station"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "10.3 km"
+                },
+                "staticDuration": {
+                  "text": "21 mins"
+                }
+              },
+              "transitDetails": {
+                "stopDetails": {
+                  "arrivalStop": {
+                    "name": "Bloor St West at Dundas St West",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.6562039,
+                        "longitude": -79.4526247
+                      }
+                    }
+                  },
+                  "arrivalTime": "2025-12-21T08:16:56Z",
+                  "departureStop": {
+                    "name": "The East Mall at Burnhamthorpe Rd South Side",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.645938,
+                        "longitude": -79.5600355
+                      }
+                    }
+                  },
+                  "departureTime": "2025-12-21T07:55:28Z"
+                },
+                "localizedValues": {
+                  "arrivalTime": {
+                    "time": {
+                      "text": "3:16 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  },
+                  "departureTime": {
+                    "time": {
+                      "text": "2:55 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  }
+                },
+                "headsign": "Bloor-Danforth to Kennedy Station",
+                "transitLine": {
+                  "agencies": [
+                    {
+                      "name": "TTC",
+                      "phoneNumber": "+1 416-393-4636",
+                      "uri": "https://www.ttc.ca/"
+                    }
+                  ],
+                  "name": "Bloor-Danforth",
+                  "color": "#ffffff",
+                  "nameShort": "300",
+                  "textColor": "#0154a6",
+                  "vehicle": {
+                    "name": {
+                      "text": "Bus"
+                    },
+                    "type": "BUS",
+                    "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                  }
+                },
+                "stopCount": 30
+              },
+              "travelMode": "TRANSIT"
+            },
+            {
+              "distanceMeters": 14,
+              "staticDuration": "12s",
+              "polyline": {
+                "encodedPolyline": "irmiGxa}cNAKA@"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.656209399999995,
+                  "longitude": -79.4526095
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6562348,
+                  "longitude": -79.45255519999999
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head east on Bloor St W toward Dundas St W"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "14 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 18,
+              "staticDuration": "34s",
+              "polyline": {
+                "encodedPolyline": "mrmiGna}cNUD?GUH"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6562348,
+                  "longitude": -79.45255519999999
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6564541,
+                  "longitude": -79.452604
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_LEFT",
+                "instructions": "Turn left onto Dundas St W"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "18 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 7319,
+              "staticDuration": "1761s",
+              "polyline": {
+                "encodedPolyline": "wsmiGra}cN~SuD~MgD`TeGjYgIbPsE`GaBZG|@q@p@_B~@cDjAwEhAkDr@cA`@wA~@eCHgAFyAF_C[kF_@iAc@_EEW_@qE]sAm@wEe@mG[aAm@iFUmDi@_Co@qFMy@a@qGe@gA{AiMW_Fc@qAi@mEMkDc@iA{@iH_A_La@uAs@yFEuBa@sAuA_LE{BsIct@cDoXc@}@eD_YGuCq@aCy@eGIgCk@oBw@gGAcBeA_FkC}SK{BI]FE"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.656441,
+                  "longitude": -79.452576
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6477277,
+                  "longitude": -79.3839964
+                }
+              },
+              "navigationInstruction": {
+                "instructions": "Streetcar towards King to Distillery"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "7.3 km"
+                },
+                "staticDuration": {
+                  "text": "29 mins"
+                }
+              },
+              "transitDetails": {
+                "stopDetails": {
+                  "arrivalStop": {
+                    "name": "King St West at University Ave East Side - St Andrew Station",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.6477277,
+                        "longitude": -79.3839964
+                      }
+                    }
+                  },
+                  "arrivalTime": "2025-12-21T08:51:58Z",
+                  "departureStop": {
+                    "name": "Dundas St West at Bloor St West",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.656441,
+                        "longitude": -79.452576
+                      }
+                    }
+                  },
+                  "departureTime": "2025-12-21T08:22:37Z"
+                },
+                "localizedValues": {
+                  "arrivalTime": {
+                    "time": {
+                      "text": "3:51 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  },
+                  "departureTime": {
+                    "time": {
+                      "text": "3:22 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  }
+                },
+                "headsign": "King to Distillery",
+                "transitLine": {
+                  "agencies": [
+                    {
+                      "name": "TTC",
+                      "phoneNumber": "+1 416-393-4636",
+                      "uri": "https://www.ttc.ca/"
+                    }
+                  ],
+                  "name": "King Night Streetcar",
+                  "color": "#ffffff",
+                  "nameShort": "304",
+                  "textColor": "#0054a6",
+                  "vehicle": {
+                    "name": {
+                      "text": "Streetcar"
+                    },
+                    "type": "TRAM",
+                    "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/tram2.png"
+                  }
+                },
+                "stopCount": 27
+              },
+              "travelMode": "TRANSIT"
+            },
+            {
+              "distanceMeters": 47,
+              "staticDuration": "37s",
+              "polyline": {
+                "encodedPolyline": "i}kiGnuocN[cCE@"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6477335,
+                  "longitude": -79.3840766
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6478957,
+                  "longitude": -79.383433
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head east on King St W toward York St"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "47 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 146,
+              "staticDuration": "133s",
+              "polyline": {
+                "encodedPolyline": "k~kiGlqocNyFdB]L"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6478957,
+                  "longitude": -79.383433
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6492983,
+                  "longitude": -79.3840101
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_LEFT",
+                "instructions": "Turn left onto York St"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.1 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 172,
+              "staticDuration": "149s",
+              "polyline": {
+                "encodedPolyline": "cgliG`uocNqA_KJEK?"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6492983,
+                  "longitude": -79.3840101
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.649709900000005,
+                  "longitude": -79.3820558
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right onto Adelaide St W\nDestination will be on the left"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.2 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            }
+          ],
+          "localizedValues": {
+            "distance": {
+              "text": "41.2 km"
+            },
+            "duration": {
+              "text": "2 hours 30 mins"
+            },
+            "staticDuration": {
+              "text": "2 hours 30 mins"
+            }
+          },
+          "stepsOverview": {
+            "multiModalSegments": [
+              {
+                "stepStartIndex": 0,
+                "stepEndIndex": 0,
+                "navigationInstruction": {
+                  "instructions": "Walk to Laird Rd At Colonial Dr (#1662)"
+                },
+                "travelMode": "WALK"
+              },
+              {
+                "stepStartIndex": 1,
+                "stepEndIndex": 1,
+                "navigationInstruction": {
+                  "instructions": "Bus towards 36 S Ridgeway To South Common"
+                },
+                "travelMode": "TRANSIT"
+              },
+              {
+                "stepStartIndex": 2,
+                "stepEndIndex": 4,
+                "navigationInstruction": {
+                  "instructions": "Walk to South Millway West Of The Collegeway"
+                },
+                "travelMode": "WALK"
+              },
+              {
+                "stepStartIndex": 5,
+                "stepEndIndex": 5,
+                "navigationInstruction": {
+                  "instructions": "Bus towards 26 E Burnhamthorpe To Kipling Terminal"
+                },
+                "travelMode": "TRANSIT"
+              },
+              {
+                "stepStartIndex": 6,
+                "stepEndIndex": 7,
+                "navigationInstruction": {
+                  "instructions": "Walk to The East Mall at Burnhamthorpe Rd South Side"
+                },
+                "travelMode": "WALK"
+              },
+              {
+                "stepStartIndex": 8,
+                "stepEndIndex": 8,
+                "navigationInstruction": {
+                  "instructions": "Bus towards Bloor-Danforth to Kennedy Station"
+                },
+                "travelMode": "TRANSIT"
+              },
+              {
+                "stepStartIndex": 9,
+                "stepEndIndex": 10,
+                "navigationInstruction": {
+                  "instructions": "Walk to Dundas St West at Bloor St West"
+                },
+                "travelMode": "WALK"
+              },
+              {
+                "stepStartIndex": 11,
+                "stepEndIndex": 11,
+                "navigationInstruction": {
+                  "instructions": "Streetcar towards King to Distillery"
+                },
+                "travelMode": "TRANSIT"
+              },
+              {
+                "stepStartIndex": 12,
+                "stepEndIndex": 14,
+                "travelMode": "WALK"
+              }
+            ]
+          }
+        }
+      ],
+      "distanceMeters": 41186,
+      "duration": "9007s",
+      "staticDuration": "9007s",
+      "polyline": {
+        "encodedPolyline": "mnshGjekeNj@n@R_@xBdC@CKTyBgCgA`CkBvD[bBInA@lAt@|M@dBAvBOpEsHUeAKkA]_Ak@_Ay@qImJkAaA_B{@i@zCWr@S`@g@p@kAjAsA{De@_AiB}BoKwLySoU_@o@s@cC[mAC]}DeO]_Au@_A}BiBcAi@{@OcCKyAA_@MkDIIbEIp@Qh@aAzA}@uAu@y@uApBoF`JKDyAhB[V]iAWm@aAcBeEwFxAeC`DkFhEiHlDdFv@n@n@Vv@HfDHAPd@@?GR@C`CCAO?DgDeFMo@Qm@_@aAiAaDmEgCsDc@}@[qAMyACkA{BX[Jk@d@sD`Fa@`@kCrAk@VkA_Fc@iA{@uAi@m@kAy@c@EiBa@]HJk@{KwDk@?q@OW?Fc@sF_B{Ag@kBw@}@S_AEgAD{ATCLmBn@?WwB\\eA?gAQeAe@aAs@eNqO{MgOuP}RyGwIaNmPo@{@eMcOaMeOi@i@{E{Fc@o@SEmGeHo@eA{EmGsDiEaGqGiLaNiFoGoCaDy@iAyA_BwBpDwD~FwGfKaAzAkCpDq@bBw@fDOz@S[gAw@{@gAeGaHcCkCs@s@sGkHqCkCU_@eBcBw@cAp@aABQjBwCpLaUf@k@h@Yz@MbDQl@LZPf@f@dDkGoH{J}CyDi^gd@qLwNy@iAsDqEiGwHeJkKyNaPuH_JcIkJuAcBgG}GgDoDaCqCuWcZaE{EkMoNsD_E_BmB_AgA}DkEwFsGac@mf@o@q@QEqFeGG[_EwEoAsAM?kJwKqI_JEU{BaCeEuE{CcD]i@e@oAiC_KmDmNiA{EUsAeAeJiD_VUwAKOuBuNBYm@{EY{AOmAoDgS}AyMo@_FLE?LBVBAL`Ad@SAFEWhAc@~@s@TYHSz@w@h@WbGmAhTgH|@Kl@@lAPVDLPjAVv@@l@G|Ai@lB}@s@kEMQmDcV{Jcs@Ae@g@uDW_B}@}G`Bk@\\YpAmBhBwAXa@Tq@l@qCN]u@m@MB{AmAu@q@Gc@EMa@i@a@oAKu@aCkLi@kCSw@e@}@Y[w@e@q@S{@A]DcAZAUgAkHa@mCg@wCwCcUqBqNeAaHeAeIUkAqAsJSs@qAcKi@uDw@{F@]qAgKwEs\\oAoJqC_S{AiLGoACaDR}FT_CTgB~AkHLa@x@}DfA}Ep@uBB]fA}ENwAP{GCoBM_Bi@_ESs@a@y@mDcEYw@cAoGqAwJe@wD{AuK}G{g@}CoUGw@}DkY_CmQu@wFi@yDmE}\\q@{EBONBAAAKA@UD?GUH@C~SuD~MgD`TeGjYgIbPsE`GaBZG|@q@p@_B~@cDjAwEhAkDr@cA`@wA~@eCHgAFyAF_C[kF_@iAc@_EEW_@qE]sAm@wEe@mG[aAm@iFUmDi@_Co@qFMy@a@qGe@gA{AiMW_Fc@qAi@mEMkDc@iA{@iH_A_La@uAs@yFEuBa@sAuA_LE{BsIct@cDoXc@}@eD_YGuCq@aCy@eGIgCk@oBw@gGAcBeA_FkC}SK{BI]FE?N[cCE@yFdB]LqA_KJEK?"
+      },
+      "viewport": {
+        "low": {
+          "latitude": 43.521532199999996,
+          "longitude": -79.6962715
+        },
+        "high": {
+          "latitude": 43.6564541,
+          "longitude": -79.3820558
+        }
+      },
+      "travelAdvisory": {
+        "transitFare": {}
+      },
+      "localizedValues": {
+        "distance": {
+          "text": "41.2 km"
+        },
+        "duration": {
+          "text": "2 hours 30 mins"
+        },
+        "staticDuration": {
+          "text": "2 hours 30 mins"
+        },
+        "transitFare": {}
+      },
+      "routeLabels": [
+        "DEFAULT_ROUTE"
+      ]
+    },
+    {
+      "legs": [
+        {
+          "distanceMeters": 41032,
+          "duration": "9027s",
+          "staticDuration": "9027s",
+          "polyline": {
+            "encodedPolyline": "mnshGjekeNj@n@R_@xBdC@CKTyBgCgA`CkBvD[bBInA@lAt@|M@dBAvBOpEsHUeAKkA]_Ak@_Ay@qImJkAaA_B{@i@zCWr@S`@g@p@kAjAsA{De@_AiB}BoKwLySoU_@o@s@cC[mAC]}DeO]_Au@_A}BiBcAi@{@OcCKyAA_@MkDIIbEIp@Qh@aAzA}@uAu@y@uApBoF`JKDyAhB[V]iAWm@aAcBeEwFxAeC`DkFhEiHlDdFv@n@n@Vv@HfDHAPd@@?GR@C`CCAO?DgDeFMo@Qm@_@aAiAaDmEgCsDc@}@[qAMyACkA{BX[Jk@d@sD`Fa@`@kCrAk@VkA_Fc@iA{@uAi@m@kAy@c@EiBa@]HJk@{KwDk@?q@OW?Fc@sF_B{Ag@kBw@}@S_AEgAD{ATCLmBn@?WwB\\eA?gAQeAe@aAs@eNqO{MgOuP}RyGwIaNmPo@{@eMcOaMeOi@i@{E{Fc@o@SEmGeHo@eA{EmGsDiEaGqGiLaNiFoGoCaDy@iAyA_BwBpDwD~FwGfKaAzAkCpDq@bBw@fDOz@S[gAw@{@gAeGaHcCkCs@s@sGkHqCkCU_@eBcBw@cAp@aABQjBwCpLaUf@k@h@Yz@MbDQl@LZPf@f@dDkGoH{J}CyDi^gd@qLwNy@iAsDqEiGwHeJkKyNaPuH_JcIkJuAcBgG}GgDoDaCqCuWcZaE{EkMoNsD_E_BmB_AgA}DkEwFsGac@mf@o@q@QEqFeGG[_EwEoAsAM?kJwKqI_JEU{BaCeEuE{CcD]i@e@oAiC_KmDmNiA{EUsAeAeJiD_VUwAKOuBuNBYm@{EY{AOmAoDgS}AyMy@kGWcBIIqBgN_A{Gw@}EcEgYCc@{BuOiHmg@_@aDE[@gAfCkc@Lm@Vk@t@oAb@cAR{@Do@ByAHg@~@qCLo@N{BxA{E~B{FSe@mAgI|DsAPBpFkB|GsB^hCWH@CK{@?i@AIl@O@FB?ODaBuKeAeIUkAqAsJSs@qAcKi@uDw@{F@]qAgKwEs\\oAoJqC_S{AiLGoACaDR}FT_CTgB~AkHLa@x@}DfA}Ep@uBB]fA}ENwAP{GCoBM_Bi@_ESs@a@y@mDcEYw@cAoGqAwJe@wD{AuK}G{g@}CoUGw@}DkY_CmQu@wFi@yDmE}\\q@{EBOa@}DYuAMuAqAmKEG{Fud@sCkUsByP}@gHaDiVaAmHeD}Va@gC{@{GyGsg@gAcIaDgV_@uBk@aF_G{e@[cCq@aF}AcM]yCiAkIgBeOqFka@cA{Js@yFLEA@RjBHCFb@IB@DE@UHCQ[HBJCQjNoEdGgBjDkAr_@mLpC{@hBu@~Z_KfRaGBN?BBA?BZK?EdD_AfA_@`@|CE^Dl@Ln@h@`EBAn@bF"
+          },
+          "startLocation": {
+            "latLng": {
+              "latitude": 43.522470399999996,
+              "longitude": -79.6887004
+            }
+          },
+          "endLocation": {
+            "latLng": {
+              "latitude": 43.649709900000005,
+              "longitude": -79.3820558
+            }
+          },
+          "steps": [
+            {
+              "distanceMeters": 118,
+              "staticDuration": "108s",
+              "polyline": {
+                "encodedPolyline": "mnshGjekeNj@n@R_@xBdC"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.522470399999996,
+                  "longitude": -79.6887004
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.521543799999996,
+                  "longitude": -79.6894465
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head southwest on Laird Rd toward Colonial Dr"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.1 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 4972,
+              "staticDuration": "1200s",
+              "polyline": {
+                "encodedPolyline": "qhshG|ikeNKTyBgCgA`CkBvD[bBInA@lAt@|M@dBAvBOpEsHUeAKkA]_Ak@_Ay@qImJkAaA_B{@i@zCWr@S`@g@p@kAjAsA{De@_AiB}BoKwLySoU_@o@s@cC[mAC]}DeO]_Au@_A}BiBcAi@{@OcCKyAA_@MkDIIbEIp@Qh@aAzA}@uAu@y@uApBoF`JKDyAhB[V]iAWm@aAcBeEwFxAeC`DkFhEiHlDdFv@n@n@Vv@HfDHAP"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.521532199999996,
+                  "longitude": -79.6894269
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.541577,
+                  "longitude": -79.681668
+                }
+              },
+              "navigationInstruction": {
+                "instructions": "Bus towards 36 S Ridgeway To South Common"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "5.0 km"
+                },
+                "staticDuration": {
+                  "text": "20 mins"
+                }
+              },
+              "transitDetails": {
+                "stopDetails": {
+                  "arrivalStop": {
+                    "name": "The Collegeway At South Millway",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.541577,
+                        "longitude": -79.681668
+                      }
+                    }
+                  },
+                  "arrivalTime": "2025-12-21T06:49:00Z",
+                  "departureStop": {
+                    "name": "Laird Rd At Colonial Dr (#1662)",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.521532199999996,
+                        "longitude": -79.6894269
+                      }
+                    }
+                  },
+                  "departureTime": "2025-12-21T06:29:00Z"
+                },
+                "localizedValues": {
+                  "arrivalTime": {
+                    "time": {
+                      "text": "1:49 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  },
+                  "departureTime": {
+                    "time": {
+                      "text": "1:29 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  }
+                },
+                "headsign": "36 S Ridgeway To South Common",
+                "transitLine": {
+                  "agencies": [
+                    {
+                      "name": "MiWay",
+                      "phoneNumber": "+1 905-615-4636",
+                      "uri": "http://www.miway.ca/"
+                    }
+                  ],
+                  "name": "Ridgeway",
+                  "color": "#d33517",
+                  "nameShort": "36",
+                  "textColor": "#ffffff",
+                  "vehicle": {
+                    "name": {
+                      "text": "Bus"
+                    },
+                    "type": "BUS",
+                    "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                  }
+                },
+                "stopCount": 19
+              },
+              "travelMode": "TRANSIT"
+            },
+            {
+              "distanceMeters": 6,
+              "staticDuration": "5s",
+              "polyline": {
+                "encodedPolyline": "udwhGnyieN?G"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.5413942,
+                  "longitude": -79.6816794
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.541393,
+                  "longitude": -79.6816407
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head east on South Millway toward The Collegeway"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "6 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 11,
+              "staticDuration": "10s",
+              "polyline": {
+                "encodedPolyline": "udwhGfyieNR@"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.541393,
+                  "longitude": -79.6816407
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.5412907,
+                  "longitude": -79.6816453
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right onto The Collegeway"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "11 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 56,
+              "staticDuration": "46s",
+              "polyline": {
+                "encodedPolyline": "adwhGhyieNC`C"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.5412907,
+                  "longitude": -79.6816453
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.5413109,
+                  "longitude": -79.6822966
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right\nDestination will be on the right"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "56 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 21423,
+              "staticDuration": "3060s",
+              "polyline": {
+                "encodedPolyline": "idwhGh}ieNO?DgDeFMo@Qm@_@aAiAaDmEgCsDc@}@[qAMyACkA{BX[Jk@d@sD`Fa@`@kCrAk@VkA_Fc@iA{@uAi@m@kAy@c@EiBa@]HJk@{KwDk@?q@OW?Fc@sF_B{Ag@kBw@}@S_AEgAD{ATCLmBn@?WwB\\eA?gAQeAe@aAs@eNqO{MgOuP}RyGwIaNmPo@{@eMcOaMeOi@i@{E{Fc@o@SEmGeHo@eA{EmGsDiEaGqGiLaNiFoGoCaDy@iAyA_BwBpDwD~FwGfKaAzAkCpDq@bBw@fDOz@S[gAw@{@gAeGaHcCkCs@s@sGkHqCkCU_@eBcBw@cAp@aABQjBwCpLaUf@k@h@Yz@MbDQl@LZPf@f@dDkGoH{J}CyDi^gd@qLwNy@iAsDqEiGwHeJkKyNaPuH_JcIkJuAcBgG}GgDoDaCqCuWcZaE{EkMoNsD_E_BmB_AgA}DkEwFsGac@mf@o@q@QEqFeGG[_EwEoAsAM?kJwKqI_JEU{BaCeEuE{CcD]i@e@oAiC_KmDmNiA{EUsAeAeJiD_VUwAKOuBuNBYm@{EY{AOmAoDgS}AyMy@kGWcBIIqBgN_A{Gw@}EcEgYCc@{BuOiHmg@_@aDE[@gAfCkc@Lm@Vk@t@oAb@cAR{@Do@ByAHg@~@qCLo@N{BxA{E~B{FSe@mAgI|DsAPBpFkB|GsB^hCWH"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.5413297,
+                  "longitude": -79.6822945
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6446705,
+                  "longitude": -79.52428789999999
+                }
+              },
+              "navigationInstruction": {
+                "instructions": "Bus towards 26 E Burnhamthorpe To Kipling Terminal"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "21.4 km"
+                },
+                "staticDuration": {
+                  "text": "51 mins"
+                }
+              },
+              "transitDetails": {
+                "stopDetails": {
+                  "arrivalStop": {
+                    "name": "Bloor St At Islington Station",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.6446705,
+                        "longitude": -79.52428789999999
+                      }
+                    }
+                  },
+                  "arrivalTime": "2025-12-21T07:52:00Z",
+                  "departureStop": {
+                    "name": "South Millway West Of The Collegeway",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.5413297,
+                        "longitude": -79.6822945
+                      }
+                    }
+                  },
+                  "departureTime": "2025-12-21T07:01:00Z"
+                },
+                "localizedValues": {
+                  "arrivalTime": {
+                    "time": {
+                      "text": "2:52 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  },
+                  "departureTime": {
+                    "time": {
+                      "text": "2:01 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  }
+                },
+                "headsign": "26 E Burnhamthorpe To Kipling Terminal",
+                "transitLine": {
+                  "agencies": [
+                    {
+                      "name": "MiWay",
+                      "phoneNumber": "+1 905-615-4636",
+                      "uri": "http://www.miway.ca/"
+                    }
+                  ],
+                  "name": "Burnhamthorpe",
+                  "color": "#d33517",
+                  "nameShort": "26",
+                  "textColor": "#ffffff",
+                  "vehicle": {
+                    "name": {
+                      "text": "Bus"
+                    },
+                    "type": "BUS",
+                    "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                  }
+                },
+                "stopCount": 64
+              },
+              "travelMode": "TRANSIT"
+            },
+            {
+              "distanceMeters": 57,
+              "staticDuration": "46s",
+              "polyline": {
+                "encodedPolyline": "cjkiGtakdNK{@?i@AI"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6446553,
+                  "longitude": -79.5242669
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.644725099999995,
+                  "longitude": -79.5237128
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head east on Bloor St W toward Islington Ave"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "57 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 13,
+              "staticDuration": "20s",
+              "polyline": {
+                "encodedPolyline": "qjkiGd~jdNl@O"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.644725099999995,
+                  "longitude": -79.5237128
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6445012,
+                  "longitude": -79.5236268
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right onto Islington Ave"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "13 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 17,
+              "staticDuration": "24s",
+              "polyline": {
+                "encodedPolyline": "cikiGt}jdN@F"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6445012,
+                  "longitude": -79.5236268
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6444907,
+                  "longitude": -79.52367459999999
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right onto Bloor St W"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "17 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 11635,
+              "staticDuration": "1697s",
+              "polyline": {
+                "encodedPolyline": "}hkiG|}jdNODaBuKeAeIUkAqAsJSs@qAcKi@uDw@{F@]qAgKwEs\\oAoJqC_S{AiLGoACaDR}FT_CTgB~AkHLa@x@}DfA}Ep@uBB]fA}ENwAP{GCoBM_Bi@_ESs@a@y@mDcEYw@cAoGqAwJe@wD{AuK}G{g@}CoUGw@}DkY_CmQu@wFi@yDmE}\\q@{EBOa@}DYuAMuAqAmKEG{Fud@sCkUsByP}@gHaDiVaAmHeD}Va@gC{@{GyGsg@gAcIaDgV_@uBk@aF_G{e@[cCq@aF}AcM]yCiAkIgBeOqFka@cA{Js@yFLE"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.64447,
+                  "longitude": -79.52366599999999
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.670296,
+                  "longitude": -79.38612400000001
+                }
+              },
+              "navigationInstruction": {
+                "instructions": "Bus towards Bloor-Danforth to Kennedy Station"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "11.6 km"
+                },
+                "staticDuration": {
+                  "text": "28 mins"
+                }
+              },
+              "transitDetails": {
+                "stopDetails": {
+                  "arrivalStop": {
+                    "name": "Bloor St East at Yonge St East Side",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.670296,
+                        "longitude": -79.38612400000001
+                      }
+                    }
+                  },
+                  "arrivalTime": "2025-12-21T08:32:09Z",
+                  "departureStop": {
+                    "name": "Bloor St West at Islington Ave",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.64447,
+                        "longitude": -79.52366599999999
+                      }
+                    }
+                  },
+                  "departureTime": "2025-12-21T08:03:52Z"
+                },
+                "localizedValues": {
+                  "arrivalTime": {
+                    "time": {
+                      "text": "3:32 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  },
+                  "departureTime": {
+                    "time": {
+                      "text": "3:03 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  }
+                },
+                "headsign": "Bloor-Danforth to Kennedy Station",
+                "transitLine": {
+                  "agencies": [
+                    {
+                      "name": "TTC",
+                      "phoneNumber": "+1 416-393-4636",
+                      "uri": "https://www.ttc.ca/"
+                    }
+                  ],
+                  "name": "Bloor-Danforth",
+                  "color": "#ffffff",
+                  "nameShort": "300",
+                  "textColor": "#0154a6",
+                  "vehicle": {
+                    "name": {
+                      "text": "Bus"
+                    },
+                    "type": "BUS",
+                    "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                  }
+                },
+                "stopCount": 36
+              },
+              "travelMode": "TRANSIT"
+            },
+            {
+              "distanceMeters": 52,
+              "staticDuration": "42s",
+              "polyline": {
+                "encodedPolyline": "mjpiGhbpcNRjBHCFb@IB@DE@"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6703126,
+                  "longitude": -79.3861301
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6701903,
+                  "longitude": -79.3868907
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head west on Bloor St E toward Yonge St"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "52 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 26,
+              "staticDuration": "41s",
+              "polyline": {
+                "encodedPolyline": "uipiG`gpcNUHCQ[H"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6701903,
+                  "longitude": -79.3868907
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.670460399999996,
+                  "longitude": -79.3869047
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right onto Yonge St"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "26 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 2185,
+              "staticDuration": "378s",
+              "polyline": {
+                "encodedPolyline": "gkpiGngpcNCQjNoEdGgBjDkAr_@mLpC{@hBu@~Z_KfRaGBN"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.670441000000004,
+                  "longitude": -79.386955
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.651768000000004,
+                  "longitude": -79.379082
+                }
+              },
+              "navigationInstruction": {
+                "instructions": "Bus towards Yonge to Queens Quay"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "2.2 km"
+                },
+                "staticDuration": {
+                  "text": "6 mins"
+                }
+              },
+              "transitDetails": {
+                "stopDetails": {
+                  "arrivalStop": {
+                    "name": "Yonge St at Richmond St West",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.651768000000004,
+                        "longitude": -79.379082
+                      }
+                    }
+                  },
+                  "arrivalTime": "2025-12-21T08:51:10Z",
+                  "departureStop": {
+                    "name": "Yonge St at Bloor St West - Bloor Station",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.670441000000004,
+                        "longitude": -79.386955
+                      }
+                    }
+                  },
+                  "departureTime": "2025-12-21T08:44:52Z"
+                },
+                "localizedValues": {
+                  "arrivalTime": {
+                    "time": {
+                      "text": "3:51 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  },
+                  "departureTime": {
+                    "time": {
+                      "text": "3:44 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  }
+                },
+                "headsign": "Yonge to Queens Quay",
+                "transitLine": {
+                  "agencies": [
+                    {
+                      "name": "TTC",
+                      "phoneNumber": "+1 416-393-4636",
+                      "uri": "https://www.ttc.ca/"
+                    }
+                  ],
+                  "name": "Yonge",
+                  "color": "#ffffff",
+                  "nameShort": "320",
+                  "textColor": "#0154a6",
+                  "vehicle": {
+                    "name": {
+                      "text": "Bus"
+                    },
+                    "type": "BUS",
+                    "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                  }
+                },
+                "stopCount": 13
+              },
+              "travelMode": "TRANSIT"
+            },
+            {
+              "distanceMeters": 159,
+              "staticDuration": "134s",
+              "polyline": {
+                "encodedPolyline": "qvliGjvncNBA?BZK?EdD_AfA_@"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6517653,
+                  "longitude": -79.3790953
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6504227,
+                  "longitude": -79.3785431
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head south on Yonge St toward Richmond St W"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.2 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 302,
+              "staticDuration": "255s",
+              "polyline": {
+                "encodedPolyline": "cnliGzrncN`@|CE^Dl@Ln@h@`EBAn@bF"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6504227,
+                  "longitude": -79.3785431
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.649709900000005,
+                  "longitude": -79.3820558
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right onto Adelaide St W\nDestination will be on the right"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.3 km"
+                },
+                "staticDuration": {
+                  "text": "4 mins"
+                }
+              },
+              "travelMode": "WALK"
+            }
+          ],
+          "localizedValues": {
+            "distance": {
+              "text": "41.0 km"
+            },
+            "duration": {
+              "text": "2 hours 30 mins"
+            },
+            "staticDuration": {
+              "text": "2 hours 30 mins"
+            }
+          },
+          "stepsOverview": {
+            "multiModalSegments": [
+              {
+                "stepStartIndex": 0,
+                "stepEndIndex": 0,
+                "navigationInstruction": {
+                  "instructions": "Walk to Laird Rd At Colonial Dr (#1662)"
+                },
+                "travelMode": "WALK"
+              },
+              {
+                "stepStartIndex": 1,
+                "stepEndIndex": 1,
+                "navigationInstruction": {
+                  "instructions": "Bus towards 36 S Ridgeway To South Common"
+                },
+                "travelMode": "TRANSIT"
+              },
+              {
+                "stepStartIndex": 2,
+                "stepEndIndex": 4,
+                "navigationInstruction": {
+                  "instructions": "Walk to South Millway West Of The Collegeway"
+                },
+                "travelMode": "WALK"
+              },
+              {
+                "stepStartIndex": 5,
+                "stepEndIndex": 5,
+                "navigationInstruction": {
+                  "instructions": "Bus towards 26 E Burnhamthorpe To Kipling Terminal"
+                },
+                "travelMode": "TRANSIT"
+              },
+              {
+                "stepStartIndex": 6,
+                "stepEndIndex": 8,
+                "navigationInstruction": {
+                  "instructions": "Walk to Bloor St West at Islington Ave"
+                },
+                "travelMode": "WALK"
+              },
+              {
+                "stepStartIndex": 9,
+                "stepEndIndex": 9,
+                "navigationInstruction": {
+                  "instructions": "Bus towards Bloor-Danforth to Kennedy Station"
+                },
+                "travelMode": "TRANSIT"
+              },
+              {
+                "stepStartIndex": 10,
+                "stepEndIndex": 11,
+                "navigationInstruction": {
+                  "instructions": "Walk to Yonge St at Bloor St West - Bloor Station"
+                },
+                "travelMode": "WALK"
+              },
+              {
+                "stepStartIndex": 12,
+                "stepEndIndex": 12,
+                "navigationInstruction": {
+                  "instructions": "Bus towards Yonge to Queens Quay"
+                },
+                "travelMode": "TRANSIT"
+              },
+              {
+                "stepStartIndex": 13,
+                "stepEndIndex": 14,
+                "travelMode": "WALK"
+              }
+            ]
+          }
+        }
+      ],
+      "distanceMeters": 41032,
+      "duration": "9028s",
+      "staticDuration": "9028s",
+      "polyline": {
+        "encodedPolyline": "mnshGjekeNj@n@R_@xBdC@CKTyBgCgA`CkBvD[bBInA@lAt@|M@dBAvBOpEsHUeAKkA]_Ak@_Ay@qImJkAaA_B{@i@zCWr@S`@g@p@kAjAsA{De@_AiB}BoKwLySoU_@o@s@cC[mAC]}DeO]_Au@_A}BiBcAi@{@OcCKyAA_@MkDIIbEIp@Qh@aAzA}@uAu@y@uApBoF`JKDyAhB[V]iAWm@aAcBeEwFxAeC`DkFhEiHlDdFv@n@n@Vv@HfDHAPd@@?GR@C`CCAO?DgDeFMo@Qm@_@aAiAaDmEgCsDc@}@[qAMyACkA{BX[Jk@d@sD`Fa@`@kCrAk@VkA_Fc@iA{@uAi@m@kAy@c@EiBa@]HJk@{KwDk@?q@OW?Fc@sF_B{Ag@kBw@}@S_AEgAD{ATCLmBn@?WwB\\eA?gAQeAe@aAs@eNqO{MgOuP}RyGwIaNmPo@{@eMcOaMeOi@i@{E{Fc@o@SEmGeHo@eA{EmGsDiEaGqGiLaNiFoGoCaDy@iAyA_BwBpDwD~FwGfKaAzAkCpDq@bBw@fDOz@S[gAw@{@gAeGaHcCkCs@s@sGkHqCkCU_@eBcBw@cAp@aABQjBwCpLaUf@k@h@Yz@MbDQl@LZPf@f@dDkGoH{J}CyDi^gd@qLwNy@iAsDqEiGwHeJkKyNaPuH_JcIkJuAcBgG}GgDoDaCqCuWcZaE{EkMoNsD_E_BmB_AgA}DkEwFsGac@mf@o@q@QEqFeGG[_EwEoAsAM?kJwKqI_JEU{BaCeEuE{CcD]i@e@oAiC_KmDmNiA{EUsAeAeJiD_VUwAKOuBuNBYm@{EY{AOmAoDgS}AyMy@kGWcBIIqBgN_A{Gw@}EcEgYCc@{BuOiHmg@_@aDE[@gAfCkc@Lm@Vk@t@oAb@cAR{@Do@ByAHg@~@qCLo@N{BxA{E~B{FSe@mAgI|DsAPBpFkB|GsB^hCWH@CK{@?i@AIl@O@FB?ODaBuKeAeIUkAqAsJSs@qAcKi@uDw@{F@]qAgKwEs\\oAoJqC_S{AiLGoACaDR}FT_CTgB~AkHLa@x@}DfA}Ep@uBB]fA}ENwAP{GCoBM_Bi@_ESs@a@y@mDcEYw@cAoGqAwJe@wD{AuK}G{g@}CoUGw@}DkY_CmQu@wFi@yDmE}\\q@{EBOa@}DYuAMuAqAmKEG{Fud@sCkUsByP}@gHaDiVaAmHeD}Va@gC{@{GyGsg@gAcIaDgV_@uBk@aF_G{e@[cCq@aF}AcM]yCiAkIgBeOqFka@cA{Js@yFLEA@RjBHCFb@IB@DE@UHCQ[HBJCQjNoEdGgBjDkAr_@mLpC{@hBu@~Z_KfRaGBN?BBA?BZK?EdD_AfA_@`@|CE^Dl@Ln@h@`EBAn@bF"
+      },
+      "viewport": {
+        "low": {
+          "latitude": 43.521532199999996,
+          "longitude": -79.6962715
+        },
+        "high": {
+          "latitude": 43.670460399999996,
+          "longitude": -79.3785431
+        }
+      },
+      "travelAdvisory": {
+        "transitFare": {}
+      },
+      "localizedValues": {
+        "distance": {
+          "text": "41.0 km"
+        },
+        "duration": {
+          "text": "2 hours 30 mins"
+        },
+        "staticDuration": {
+          "text": "2 hours 30 mins"
+        },
+        "transitFare": {}
+      },
+      "routeLabels": [
+        "DEFAULT_ROUTE_ALTERNATE"
+      ]
+    },
+    {
+      "legs": [
+        {
+          "distanceMeters": 35068,
+          "duration": "6447s",
+          "staticDuration": "6447s",
+          "polyline": {
+            "encodedPolyline": "mnshGjekeNj@n@R_@xBdC@CKToSmUqBwBvBeDFYdBoCTE`EiGjBsCwHqIwH}HsMyNwDgEuBoCcBkBuA{AqEeF_IyI_FyFIEG@kBqBCQgFiGsCgDcAuAcCwCw@y@cCwCmByBwCkD_CiCmDiE{@sAeCqF}E_LsBeFGKMKiBmEw@cBqAcC{@oAGYQ_@qDoFkAoAeA{@_Ao@}@i@kEmByDsA]GmCeAoB{@u@g@uAw@cB}AkC}C[EaD}DOg@aOiQ{ReVqO_R{@iAk@e@MAqA{AAYw@cAaKoLcDgDgGgHqLyNaTsXOM_@U_CoCsPmS}NkQy@}@kP_Sw@cA_CmCeYe]}@_AK[k@u@iAmAeNeP}IeKo@cAoFgGSAiJoKm@q@i@e@_AsAsByBsCeDcIyIuA_BcN}NySiV{JgLIYe@i@kHkJOMM@mGeH}I{J_CeCmG}GwCcDgFqFgJsJ{CmDyE}EcBaByKaMmFiFcDmD{@mA}@}Au@gBm@{BAq@qA{IqA{J?OuB}P]_C}Hwb@}@qGk@cEIIGAe@yDe@oCa@_Bi@wAyEgLaAoBeAuAeK}K{CqCJ[@A]W]_@[bAkCsBEOK?gAaAOIWY}@m@GJIBeA}@O@EDQl@c@|@KKOZSV?@PASWXi@Tu@\\cBh@{Ar@kAj@e@fBgALSBOVBLGFUCW}GkIe@s@O@MHIJUg@}@kAYKOaAa@mAgA}Am@q@Y`@c@d@]T[LMm@e@}@Y[w@e@q@S{@A]DcAZAUgAkHa@mCg@wCwCcUqBqNeAaHeAeIUkAqAsJSs@qAcKi@uDw@{F@]qAgKwEs\\oAoJqC_S{AiLGoACaDR}FT_CTgB~AkHLa@x@}DfA}Ep@uBB]fA}ENwAP{GCoBM_Bi@_ESs@a@y@mDcEYw@cAoGqAwJe@wD{AuK}G{g@}CoUGw@}DkY_CmQu@wFi@yDmE}\\q@{EBOa@}DYuAMuAqAmKEG{Fud@sCkUsByP}@gHaDiVaAmHeD}Va@gC{@{GyGsg@gAcIaDgV_@uBk@aF_G{e@[cCq@aF}AcM]yCiAkIgBeOqFka@cA{Js@yFLEA@RjBHCFb@IB@DE@UHCQ[HBJCQjNoEdGgBjDkAr_@mLpC{@hBu@~Z_KfRaGBN?BBA?BZK?EdD_AfA_@`@|CE^Dl@Ln@h@`EBAn@bF"
+          },
+          "startLocation": {
+            "latLng": {
+              "latitude": 43.522470399999996,
+              "longitude": -79.6887004
+            }
+          },
+          "endLocation": {
+            "latLng": {
+              "latitude": 43.649709900000005,
+              "longitude": -79.3820558
+            }
+          },
+          "steps": [
+            {
+              "distanceMeters": 118,
+              "staticDuration": "108s",
+              "polyline": {
+                "encodedPolyline": "mnshGjekeNj@n@R_@xBdC"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.522470399999996,
+                  "longitude": -79.6887004
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.521543799999996,
+                  "longitude": -79.6894465
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head southwest on Laird Rd toward Colonial Dr"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.1 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 18290,
+              "staticDuration": "2400s",
+              "polyline": {
+                "encodedPolyline": "qhshG|ikeNKToSmUqBwBvBeDFYdBoCTE`EiGjBsCwHqIwH}HsMyNwDgEuBoCcBkBuA{AqEeF_IyI_FyFIEG@kBqBCQgFiGsCgDcAuAcCwCw@y@cCwCmByBwCkD_CiCmDiE{@sAeCqF}E_LsBeFGKMKiBmEw@cBqAcC{@oAGYQ_@qDoFkAoAeA{@_Ao@}@i@kEmByDsA]GmCeAoB{@u@g@uAw@cB}AkC}C[EaD}DOg@aOiQ{ReVqO_R{@iAk@e@MAqA{AAYw@cAaKoLcDgDgGgHqLyNaTsXOM_@U_CoCsPmS}NkQy@}@kP_Sw@cA_CmCeYe]}@_AK[k@u@iAmAeNeP}IeKo@cAoFgGSAiJoKm@q@i@e@_AsAsByBsCeDcIyIuA_BcN}NySiV{JgLIYe@i@kHkJOMM@mGeH}I{J_CeCmG}GwCcDgFqFgJsJ{CmDyE}EcBaByKaMmFiFcDmD{@mA}@}Au@gBm@{BAq@qA{IqA{J?OuB}P]_C}Hwb@}@qGk@cEIIGAe@yDe@oCa@_Bi@wAyEgLaAoBeAuAeK}K{CqCJ["
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.521532199999996,
+                  "longitude": -79.6894269
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.635838,
+                  "longitude": -79.5401
+                }
+              },
+              "navigationInstruction": {
+                "instructions": "Bus towards 1 E Dundas To Kipling Terminal"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "18.3 km"
+                },
+                "staticDuration": {
+                  "text": "40 mins"
+                }
+              },
+              "transitDetails": {
+                "stopDetails": {
+                  "arrivalStop": {
+                    "name": "Dundas St West at Subway Cres",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.635838,
+                        "longitude": -79.5401
+                      }
+                    }
+                  },
+                  "arrivalTime": "2025-12-21T07:03:00Z",
+                  "departureStop": {
+                    "name": "Laird Rd At Colonial Dr (#1662)",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.521532199999996,
+                        "longitude": -79.6894269
+                      }
+                    }
+                  },
+                  "departureTime": "2025-12-21T06:23:00Z"
+                },
+                "localizedValues": {
+                  "arrivalTime": {
+                    "time": {
+                      "text": "2:03 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  },
+                  "departureTime": {
+                    "time": {
+                      "text": "1:23 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  }
+                },
+                "headsign": "1 E Dundas To Kipling Terminal",
+                "transitLine": {
+                  "agencies": [
+                    {
+                      "name": "MiWay",
+                      "phoneNumber": "+1 905-615-4636",
+                      "uri": "http://www.miway.ca/"
+                    }
+                  ],
+                  "name": "Dundas",
+                  "color": "#d33517",
+                  "nameShort": "1",
+                  "textColor": "#ffffff",
+                  "vehicle": {
+                    "name": {
+                      "text": "Bus"
+                    },
+                    "type": "BUS",
+                    "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                  }
+                },
+                "stopCount": 59
+              },
+              "travelMode": "TRANSIT"
+            },
+            {
+              "distanceMeters": 139,
+              "staticDuration": "126s",
+              "polyline": {
+                "encodedPolyline": "}riiGpdndN]W]_@[bAkCsBEO"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6358348,
+                  "longitude": -79.5400927
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6370046,
+                  "longitude": -79.53948880000002
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head northeast on Dundas St W toward Poplar Ave"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.1 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 119,
+              "staticDuration": "106s",
+              "polyline": {
+                "encodedPolyline": "gziiGx`ndNK?gAaAOIWY}@m@"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6370046,
+                  "longitude": -79.53948880000002
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6379273,
+                  "longitude": -79.5387463
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_SLIGHT_LEFT",
+                "instructions": "Slight left to stay on Dundas St W"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.1 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 24,
+              "staticDuration": "19s",
+              "polyline": {
+                "encodedPolyline": "a`jiGd|mdNGJIB"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6379273,
+                  "longitude": -79.5387463
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6380246,
+                  "longitude": -79.5388291
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_LEFT",
+                "instructions": "Turn left toward Aukland Rd"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "24 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 112,
+              "staticDuration": "90s",
+              "polyline": {
+                "encodedPolyline": "s`jiGt|mdNeA}@O@EDQl@c@|@"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6380246,
+                  "longitude": -79.5388291
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6387486,
+                  "longitude": -79.53910060000001
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right toward Aukland Rd"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.1 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 17,
+              "staticDuration": "14s",
+              "polyline": {
+                "encodedPolyline": "eejiGj~mdNKK"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6387486,
+                  "longitude": -79.53910060000001
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6388059,
+                  "longitude": -79.5390353
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right toward Aukland Rd"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "17 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 22,
+              "staticDuration": "19s",
+              "polyline": {
+                "encodedPolyline": "qejiG~}mdNOZSV"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6388059,
+                  "longitude": -79.5390353
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6389879,
+                  "longitude": -79.53929939999999
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_LEFT",
+                "instructions": "Turn left onto Aukland Rd"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "22 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 11,
+              "staticDuration": "9s",
+              "polyline": {
+                "encodedPolyline": "ufjiGr_ndN?@"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6389879,
+                  "longitude": -79.53929939999999
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6389876,
+                  "longitude": -79.5393066
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_LEFT",
+                "instructions": "Turn left\nDestination will be on the left"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "11 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 13492,
+              "staticDuration": "1984s",
+              "polyline": {
+                "encodedPolyline": "cfjiGr_ndNSWXi@Tu@\\cBh@{Ar@kAj@e@fBgALSBOVBLGFUCW}GkIe@s@O@MHIJUg@}@kAYKOaAa@mAgA}Am@q@Y`@c@d@]T[LMm@e@}@Y[w@e@q@S{@A]DcAZAUgAkHa@mCg@wCwCcUqBqNeAaHeAeIUkAqAsJSs@qAcKi@uDw@{F@]qAgKwEs\\oAoJqC_S{AiLGoACaDR}FT_CTgB~AkHLa@x@}DfA}Ep@uBB]fA}ENwAP{GCoBM_Bi@_ESs@a@y@mDcEYw@cAoGqAwJe@wD{AuK}G{g@}CoUGw@}DkY_CmQu@wFi@yDmE}\\q@{EBOa@}DYuAMuAqAmKEG{Fud@sCkUsByP}@gHaDiVaAmHeD}Va@gC{@{GyGsg@gAcIaDgV_@uBk@aF_G{e@[cCq@aF}AcM]yCiAkIgBeOqFka@cA{Js@yFLE"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.638898999999995,
+                  "longitude": -79.539299
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.670296,
+                  "longitude": -79.38612400000001
+                }
+              },
+              "navigationInstruction": {
+                "instructions": "Bus towards Bloor-Danforth to Warden via Kipling Stn"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "13.5 km"
+                },
+                "staticDuration": {
+                  "text": "33 mins"
+                }
+              },
+              "transitDetails": {
+                "stopDetails": {
+                  "arrivalStop": {
+                    "name": "Bloor St East at Yonge St East Side",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.670296,
+                        "longitude": -79.38612400000001
+                      }
+                    }
+                  },
+                  "arrivalTime": "2025-12-21T07:47:09Z",
+                  "departureStop": {
+                    "name": "Aukland Rd North Of Dundas St",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.638898999999995,
+                        "longitude": -79.539299
+                      }
+                    }
+                  },
+                  "departureTime": "2025-12-21T07:14:05Z"
+                },
+                "localizedValues": {
+                  "arrivalTime": {
+                    "time": {
+                      "text": "2:47 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  },
+                  "departureTime": {
+                    "time": {
+                      "text": "2:14 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  }
+                },
+                "headsign": "Bloor-Danforth to Warden via Kipling Stn",
+                "transitLine": {
+                  "agencies": [
+                    {
+                      "name": "TTC",
+                      "phoneNumber": "+1 416-393-4636",
+                      "uri": "https://www.ttc.ca/"
+                    }
+                  ],
+                  "name": "Bloor-Danforth Night Bus",
+                  "color": "#ffffff",
+                  "nameShort": "300A",
+                  "textColor": "#0154a6",
+                  "vehicle": {
+                    "name": {
+                      "text": "Bus"
+                    },
+                    "type": "BUS",
+                    "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                  }
+                },
+                "stopCount": 40
+              },
+              "travelMode": "TRANSIT"
+            },
+            {
+              "distanceMeters": 52,
+              "staticDuration": "42s",
+              "polyline": {
+                "encodedPolyline": "mjpiGhbpcNRjBHCFb@IB@DE@"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6703126,
+                  "longitude": -79.3861301
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6701903,
+                  "longitude": -79.3868907
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head west on Bloor St E toward Yonge St"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "52 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 26,
+              "staticDuration": "41s",
+              "polyline": {
+                "encodedPolyline": "uipiG`gpcNUHCQ[H"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6701903,
+                  "longitude": -79.3868907
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.670460399999996,
+                  "longitude": -79.3869047
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right onto Yonge St"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "26 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 2185,
+              "staticDuration": "438s",
+              "polyline": {
+                "encodedPolyline": "gkpiGngpcNCQjNoEdGgBjDkAr_@mLpC{@hBu@~Z_KfRaGBN"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.670441000000004,
+                  "longitude": -79.386955
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.651768000000004,
+                  "longitude": -79.379082
+                }
+              },
+              "navigationInstruction": {
+                "instructions": "Bus towards Yonge to Queens Quay"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "2.2 km"
+                },
+                "staticDuration": {
+                  "text": "7 mins"
+                }
+              },
+              "transitDetails": {
+                "stopDetails": {
+                  "arrivalStop": {
+                    "name": "Yonge St at Richmond St West",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.651768000000004,
+                        "longitude": -79.379082
+                      }
+                    }
+                  },
+                  "arrivalTime": "2025-12-21T08:02:10Z",
+                  "departureStop": {
+                    "name": "Yonge St at Bloor St West - Bloor Station",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.670441000000004,
+                        "longitude": -79.386955
+                      }
+                    }
+                  },
+                  "departureTime": "2025-12-21T07:54:52Z"
+                },
+                "localizedValues": {
+                  "arrivalTime": {
+                    "time": {
+                      "text": "3:02 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  },
+                  "departureTime": {
+                    "time": {
+                      "text": "2:54 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  }
+                },
+                "headsign": "Yonge to Queens Quay",
+                "transitLine": {
+                  "agencies": [
+                    {
+                      "name": "TTC",
+                      "phoneNumber": "+1 416-393-4636",
+                      "uri": "https://www.ttc.ca/"
+                    }
+                  ],
+                  "name": "Yonge",
+                  "color": "#ffffff",
+                  "nameShort": "320",
+                  "textColor": "#0154a6",
+                  "vehicle": {
+                    "name": {
+                      "text": "Bus"
+                    },
+                    "type": "BUS",
+                    "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                  }
+                },
+                "stopCount": 13
+              },
+              "travelMode": "TRANSIT"
+            },
+            {
+              "distanceMeters": 159,
+              "staticDuration": "134s",
+              "polyline": {
+                "encodedPolyline": "qvliGjvncNBA?BZK?EdD_AfA_@"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6517653,
+                  "longitude": -79.3790953
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6504227,
+                  "longitude": -79.3785431
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head south on Yonge St toward Richmond St W"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.2 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 302,
+              "staticDuration": "255s",
+              "polyline": {
+                "encodedPolyline": "cnliGzrncN`@|CE^Dl@Ln@h@`EBAn@bF"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6504227,
+                  "longitude": -79.3785431
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.649709900000005,
+                  "longitude": -79.3820558
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right onto Adelaide St W\nDestination will be on the right"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.3 km"
+                },
+                "staticDuration": {
+                  "text": "4 mins"
+                }
+              },
+              "travelMode": "WALK"
+            }
+          ],
+          "localizedValues": {
+            "distance": {
+              "text": "35.1 km"
+            },
+            "duration": {
+              "text": "1 hour 47 mins"
+            },
+            "staticDuration": {
+              "text": "1 hour 47 mins"
+            }
+          },
+          "stepsOverview": {
+            "multiModalSegments": [
+              {
+                "stepStartIndex": 0,
+                "stepEndIndex": 0,
+                "navigationInstruction": {
+                  "instructions": "Walk to Laird Rd At Colonial Dr (#1662)"
+                },
+                "travelMode": "WALK"
+              },
+              {
+                "stepStartIndex": 1,
+                "stepEndIndex": 1,
+                "navigationInstruction": {
+                  "instructions": "Bus towards 1 E Dundas To Kipling Terminal"
+                },
+                "travelMode": "TRANSIT"
+              },
+              {
+                "stepStartIndex": 2,
+                "stepEndIndex": 8,
+                "navigationInstruction": {
+                  "instructions": "Walk to Aukland Rd North Of Dundas St"
+                },
+                "travelMode": "WALK"
+              },
+              {
+                "stepStartIndex": 9,
+                "stepEndIndex": 9,
+                "navigationInstruction": {
+                  "instructions": "Bus towards Bloor-Danforth to Warden via Kipling Stn"
+                },
+                "travelMode": "TRANSIT"
+              },
+              {
+                "stepStartIndex": 10,
+                "stepEndIndex": 11,
+                "navigationInstruction": {
+                  "instructions": "Walk to Yonge St at Bloor St West - Bloor Station"
+                },
+                "travelMode": "WALK"
+              },
+              {
+                "stepStartIndex": 12,
+                "stepEndIndex": 12,
+                "navigationInstruction": {
+                  "instructions": "Bus towards Yonge to Queens Quay"
+                },
+                "travelMode": "TRANSIT"
+              },
+              {
+                "stepStartIndex": 13,
+                "stepEndIndex": 14,
+                "travelMode": "WALK"
+              }
+            ]
+          }
+        }
+      ],
+      "distanceMeters": 35068,
+      "duration": "6448s",
+      "staticDuration": "6448s",
+      "polyline": {
+        "encodedPolyline": "mnshGjekeNj@n@R_@xBdC@CKToSmUqBwBvBeDFYdBoCTE`EiGjBsCwHqIwH}HsMyNwDgEuBoCcBkBuA{AqEeF_IyI_FyFIEG@kBqBCQgFiGsCgDcAuAcCwCw@y@cCwCmByBwCkD_CiCmDiE{@sAeCqF}E_LsBeFGKMKiBmEw@cBqAcC{@oAGYQ_@qDoFkAoAeA{@_Ao@}@i@kEmByDsA]GmCeAoB{@u@g@uAw@cB}AkC}C[EaD}DOg@aOiQ{ReVqO_R{@iAk@e@MAqA{AAYw@cAaKoLcDgDgGgHqLyNaTsXOM_@U_CoCsPmS}NkQy@}@kP_Sw@cA_CmCeYe]}@_AK[k@u@iAmAeNeP}IeKo@cAoFgGSAiJoKm@q@i@e@_AsAsByBsCeDcIyIuA_BcN}NySiV{JgLIYe@i@kHkJOMM@mGeH}I{J_CeCmG}GwCcDgFqFgJsJ{CmDyE}EcBaByKaMmFiFcDmD{@mA}@}Au@gBm@{BAq@qA{IqA{J?OuB}P]_C}Hwb@}@qGk@cEIIGAe@yDe@oCa@_Bi@wAyEgLaAoBeAuAeK}K{CqCJ[@A]W]_@[bAkCsBEOK?gAaAOIWY}@m@GJIBeA}@O@EDQl@c@|@KKOZSV?@PASWXi@Tu@\\cBh@{Ar@kAj@e@fBgALSBOVBLGFUCW}GkIe@s@O@MHIJUg@}@kAYKOaAa@mAgA}Am@q@Y`@c@d@]T[LMm@e@}@Y[w@e@q@S{@A]DcAZAUgAkHa@mCg@wCwCcUqBqNeAaHeAeIUkAqAsJSs@qAcKi@uDw@{F@]qAgKwEs\\oAoJqC_S{AiLGoACaDR}FT_CTgB~AkHLa@x@}DfA}Ep@uBB]fA}ENwAP{GCoBM_Bi@_ESs@a@y@mDcEYw@cAoGqAwJe@wD{AuK}G{g@}CoUGw@}DkY_CmQu@wFi@yDmE}\\q@{EBOa@}DYuAMuAqAmKEG{Fud@sCkUsByP}@gHaDiVaAmHeD}Va@gC{@{GyGsg@gAcIaDgV_@uBk@aF_G{e@[cCq@aF}AcM]yCiAkIgBeOqFka@cA{Js@yFLEA@RjBHCFb@IB@DE@UHCQ[HBJCQjNoEdGgBjDkAr_@mLpC{@hBu@~Z_KfRaGBN?BBA?BZK?EdD_AfA_@`@|CE^Dl@Ln@h@`EBAn@bF"
+      },
+      "viewport": {
+        "low": {
+          "latitude": 43.521532199999996,
+          "longitude": -79.6895356
+        },
+        "high": {
+          "latitude": 43.670460399999996,
+          "longitude": -79.3785431
+        }
+      },
+      "travelAdvisory": {
+        "transitFare": {}
+      },
+      "localizedValues": {
+        "distance": {
+          "text": "35.1 km"
+        },
+        "duration": {
+          "text": "1 hour 47 mins"
+        },
+        "staticDuration": {
+          "text": "1 hour 47 mins"
+        },
+        "transitFare": {}
+      },
+      "routeLabels": [
+        "DEFAULT_ROUTE_ALTERNATE"
+      ]
+    },
+    {
+      "legs": [
+        {
+          "distanceMeters": 38031,
+          "duration": "7911s",
+          "staticDuration": "7911s",
+          "polyline": {
+            "encodedPolyline": "mnshGjekeNsAyAP]kD{D@CIRiFaGqBwBvBeDFYdBoCTE`EiGjBsCwHqIwH}HsMyNwDgEuBoCcBkBuA{AqEeF_IyI_FyFIEG@kBqBCQgFiGsCgDcAuAcCwCw@y@cCwCmByBwCkD_CiCmDiE{@sAeCqF}E_LsBeFGKMKiBmEw@cBqAcC{@oAGYQ_@qDoFkAoAeA{@_Ao@}@i@kEmByDsA]GmCeAoB{@u@g@uAw@cB}AkC}C[EaD}DOg@aOiQ{ReVqO_R{@iAk@e@MAqA{AAYw@cAaKoLcDgDgGgHqLyNaTsXOM_@U_CoCsPmS}NkQy@}@kP_Sw@cA_CmCeYe]}@_AK[k@u@iAmAeNeP}IeKo@cAoFgGSAiJoKm@q@i@e@_AsAsByBsCeDcIyIuA_BcN}NySiV{JgLIYe@i@kHkJOMM@mGeH}I{J_CeCmG}GwCcDgFqFgJsJ{CmDyE}EcBaByKaMmFiFcDmD{@mA}@}Au@gBm@{BAq@qA{IqA{J?OuB}P]_C}Hwb@}@qGk@cEIIGAe@yDe@oCa@_Bi@wAyEgLaAoBeAuAeK}K{CqCJ[@A]W[]mCuBuAkAe@c@k@a@oC}BYYv@sAv@q@b@W`@KA{@Ks@CYNYeAoAV_AKP{BoCe@s@O@MHIJqBdAk@r@a@c@COGq@lTiG`Bu@bBu@`A[HShv@iVvIiBjQwFRFlJeDhBa@~G{@~Aa@bAa@|AeALDb@GH@BUXUHCC[fCkBDMfBq@rw@yVLBvFgBHMh_@iLvCaADRGDTK@Fd@O?GD\\qFu`@_ByJGg@SsDc@oAi@mEk@}D]mEa@eAg@sD[mE]aAi@uD[gE]gAk@iEWuD_@cAI{@MyDSeESyAuA{Ew@_Ci@aCqAuB_@w@mA_Bi@k@uAaAsAo@eCaAs@Sq@MqAOoEm@y@RuGUuBUgAa@y@LaIo@aB_@aA}@oASoDuBy@K{BcA{G{D{@CaCcAiCyAy@Wq@a@m@m@i@y@[mAeA_HUsAkAaBcAgA}AcAqAs@}BaBc@_@wDqBuJyD{EgBcEsAaCk@[GaAa@{@y@wAOk@?iBTMDaAvAUNS@KCu@i@}@Yi@kEc@uAw@aAk@m@}AgAyBaBsC_DyFqF]_@g@{@GBuAwBaA{Bo@oBi@_CYqCMcD}AsOe@wCaCaLoAsGe@{CWyBu@uLWcWB{I?mBTyAjAyFtBiU?aAiA}Lc@uD_@{CgA_KyCcVuBkR}Eaa@iD_Zc@wAQuA]uE[iAy@aHs@_GByAe@iAk@cFQ_Ee@uAyAgLGaC_@iAwAmLK}Ca@uA{AcMGuB]mAo@cFWiE]sAkAaJQuBOoAg@}FyAwMuEy]s@yF{AqIeA{HUeE_@}@iAmI|DgAfDu@AIb@O{AcLJEK?"
+          },
+          "startLocation": {
+            "latLng": {
+              "latitude": 43.522470399999996,
+              "longitude": -79.6887004
+            }
+          },
+          "endLocation": {
+            "latLng": {
+              "latitude": 43.649709900000005,
+              "longitude": -79.3820558
+            }
+          },
+          "steps": [
+            {
+              "distanceMeters": 181,
+              "staticDuration": "153s",
+              "polyline": {
+                "encodedPolyline": "mnshGjekeNsAyAP]kD{D"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.522470399999996,
+                  "longitude": -79.6887004
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.5236602,
+                  "longitude": -79.68716359999999
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head northeast on Laird Rd toward Turnstone Crescent\nDestination will be on the right"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.2 km"
+                },
+                "staticDuration": {
+                  "text": "3 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 17989,
+              "staticDuration": "2400s",
+              "polyline": {
+                "encodedPolyline": "yushGr{jeNIRiFaGqBwBvBeDFYdBoCTE`EiGjBsCwHqIwH}HsMyNwDgEuBoCcBkBuA{AqEeF_IyI_FyFIEG@kBqBCQgFiGsCgDcAuAcCwCw@y@cCwCmByBwCkD_CiCmDiE{@sAeCqF}E_LsBeFGKMKiBmEw@cBqAcC{@oAGYQ_@qDoFkAoAeA{@_Ao@}@i@kEmByDsA]GmCeAoB{@u@g@uAw@cB}AkC}C[EaD}DOg@aOiQ{ReVqO_R{@iAk@e@MAqA{AAYw@cAaKoLcDgDgGgHqLyNaTsXOM_@U_CoCsPmS}NkQy@}@kP_Sw@cA_CmCeYe]}@_AK[k@u@iAmAeNeP}IeKo@cAoFgGSAiJoKm@q@i@e@_AsAsByBsCeDcIyIuA_BcN}NySiV{JgLIYe@i@kHkJOMM@mGeH}I{J_CeCmG}GwCcDgFqFgJsJ{CmDyE}EcBaByKaMmFiFcDmD{@mA}@}Au@gBm@{BAq@qA{IqA{J?OuB}P]_C}Hwb@}@qGk@cEIIGAe@yDe@oCa@_Bi@wAyEgLaAoBeAuAeK}K{CqCJ["
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.523649,
+                  "longitude": -79.687144
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.635838,
+                  "longitude": -79.5401
+                }
+              },
+              "navigationInstruction": {
+                "instructions": "Bus towards 1 E Dundas To Kipling Terminal"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "18.0 km"
+                },
+                "staticDuration": {
+                  "text": "40 mins"
+                }
+              },
+              "transitDetails": {
+                "stopDetails": {
+                  "arrivalStop": {
+                    "name": "Dundas St West at Subway Cres",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.635838,
+                        "longitude": -79.5401
+                      }
+                    }
+                  },
+                  "arrivalTime": "2025-12-21T06:18:00Z",
+                  "departureStop": {
+                    "name": "Laird Rd At Turnstone Cres",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.523649,
+                        "longitude": -79.687144
+                      }
+                    }
+                  },
+                  "departureTime": "2025-12-21T05:38:00Z"
+                },
+                "localizedValues": {
+                  "arrivalTime": {
+                    "time": {
+                      "text": "1:18 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  },
+                  "departureTime": {
+                    "time": {
+                      "text": "12:38 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  }
+                },
+                "headsign": "1 E Dundas To Kipling Terminal",
+                "transitLine": {
+                  "agencies": [
+                    {
+                      "name": "MiWay",
+                      "phoneNumber": "+1 905-615-4636",
+                      "uri": "http://www.miway.ca/"
+                    }
+                  ],
+                  "name": "Dundas",
+                  "color": "#d33517",
+                  "nameShort": "1",
+                  "textColor": "#ffffff",
+                  "vehicle": {
+                    "name": {
+                      "text": "Bus"
+                    },
+                    "type": "BUS",
+                    "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                  }
+                },
+                "stopCount": 58
+              },
+              "travelMode": "TRANSIT"
+            },
+            {
+              "distanceMeters": 139,
+              "staticDuration": "114s",
+              "polyline": {
+                "encodedPolyline": "}riiGpdndN]W[]mCuB"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6358348,
+                  "longitude": -79.5400927
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.636832999999996,
+                  "longitude": -79.53922949999999
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head northeast on Dundas St W toward Poplar Ave"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.1 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 208,
+              "staticDuration": "174s",
+              "polyline": {
+                "encodedPolyline": "eyiiGd_ndNuAkAe@c@k@a@oC}BYY"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.636832999999996,
+                  "longitude": -79.53922949999999
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.638515299999995,
+                  "longitude": -79.5377446
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_SLIGHT_RIGHT",
+                "instructions": "Slight right to stay on Dundas St W"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.2 km"
+                },
+                "staticDuration": {
+                  "text": "3 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 128,
+              "staticDuration": "91s",
+              "polyline": {
+                "encodedPolyline": "wcjiGzumdNv@sAv@q@b@W`@K"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.638515299999995,
+                  "longitude": -79.5377446
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.637606399999996,
+                  "longitude": -79.5368931
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right onto Aukland Rd"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.1 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 65,
+              "staticDuration": "51s",
+              "polyline": {
+                "encodedPolyline": "a~iiGppmdNA{@Ks@CY"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.637606399999996,
+                  "longitude": -79.5368931
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6377041,
+                  "longitude": -79.53620149999999
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_LEFT",
+                "instructions": "Turn left toward St Albans Rd"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "65 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 9,
+              "staticDuration": "7s",
+              "polyline": {
+                "encodedPolyline": "s~iiGflmdN"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6377041,
+                  "longitude": -79.53620149999999
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6377041,
+                  "longitude": -79.53620149999999
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right toward St Albans Rd"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "9 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 50,
+              "staticDuration": "42s",
+              "polyline": {
+                "encodedPolyline": "s~iiGflmdNNYeAoA"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6377041,
+                  "longitude": -79.53620149999999
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.637966299999995,
+                  "longitude": -79.5356697
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_LEFT",
+                "instructions": "Turn left onto St Albans Rd\nDestination will be on the right"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "50 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 5185,
+              "staticDuration": "789s",
+              "polyline": {
+                "encodedPolyline": "q_jiG|fmdNKP{BoCe@s@O@MHIJqBdAk@r@a@c@COGq@lTiG`Bu@bBu@`A[HShv@iVvIiBjQwFRFlJeDhBa@~G{@~Aa@bAa@|AeALDb@GH@BUXUHCC[fCkBDMfBq@rw@yVLBvFgBHMh_@iLvCaADR"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.637851999999995,
+                  "longitude": -79.535347
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.598354,
+                  "longitude": -79.51714299999999
+                }
+              },
+              "navigationInstruction": {
+                "instructions": "Bus towards Kipling South to Lake Shore"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "5.2 km"
+                },
+                "staticDuration": {
+                  "text": "13 mins"
+                }
+              },
+              "transitDetails": {
+                "stopDetails": {
+                  "arrivalStop": {
+                    "name": "Kipling Ave at Lake Shore Blvd West",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.598354,
+                        "longitude": -79.51714299999999
+                      }
+                    }
+                  },
+                  "arrivalTime": "2025-12-21T06:45:09Z",
+                  "departureStop": {
+                    "name": "Kipling Station at Bus Bay 6",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.637851999999995,
+                        "longitude": -79.535347
+                      }
+                    }
+                  },
+                  "departureTime": "2025-12-21T06:32:00Z"
+                },
+                "localizedValues": {
+                  "arrivalTime": {
+                    "time": {
+                      "text": "1:45 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  },
+                  "departureTime": {
+                    "time": {
+                      "text": "1:32 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  }
+                },
+                "headsign": "Kipling South to Lake Shore",
+                "transitLine": {
+                  "agencies": [
+                    {
+                      "name": "TTC",
+                      "phoneNumber": "+1 416-393-4636",
+                      "uri": "https://www.ttc.ca/"
+                    }
+                  ],
+                  "name": "Kipling South",
+                  "color": "#ed1c24",
+                  "nameShort": "44",
+                  "textColor": "#ffffff",
+                  "vehicle": {
+                    "name": {
+                      "text": "Bus"
+                    },
+                    "type": "BUS",
+                    "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                  }
+                },
+                "stopCount": 17
+              },
+              "travelMode": "TRANSIT"
+            },
+            {
+              "distanceMeters": 36,
+              "staticDuration": "40s",
+              "polyline": {
+                "encodedPolyline": "}hbiGhuidNTK@Fd@O?G"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.598387699999996,
+                  "longitude": -79.5171721
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.5980813,
+                  "longitude": -79.5170308
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head south on Kipling Ave toward Lake Shore Blvd W\nDestination will be on the right"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "36 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 13839,
+              "staticDuration": "2461s",
+              "polyline": {
+                "encodedPolyline": "yfbiGjuidNqFu`@_ByJGg@SsDc@oAi@mEk@}D]mEa@eAg@sD[mE]aAi@uD[gE]gAk@iEWuD_@cAI{@MyDSeESyAuA{Ew@_Ci@aCqAuB_@w@mA_Bi@k@uAaAsAo@eCaAs@Sq@MqAOoEm@y@RuGUuBUgAa@y@LaIo@aB_@aA}@oASoDuBy@K{BcA{G{D{@CaCcAiCyAy@Wq@a@m@m@i@y@[mAeA_HUsAkAaBcAgA}AcAqAs@}BaBc@_@wDqBuJyD{EgBcEsAaCk@[GaAa@{@y@wAOk@?iBTMDaAvAUNS@KCu@i@}@Yi@kEc@uAw@aAk@m@}AgAyBaBsC_DyFqF]_@g@{@GBuAwBaA{Bo@oBi@_CYqCMcD}AsOe@wCaCaLoAsGe@{CWyBu@uLWcWB{I?mBTyAjAyFtBiU?aAiA}Lc@uD_@{CgA_KyCcVuBkR}Eaa@iD_Zc@wAQuA]uE[iAy@aHs@_GByAe@iAk@cFQ_Ee@uAyAgLGaC_@iAwAmLK}Ca@uA{AcMGuB]mAo@cFWiE]sAkAaJQuBOoAg@}FyAwMuEy]s@yF{AqIeA{HUeE_@}@iAmI|DgAfDu@"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.598045000000006,
+                  "longitude": -79.51718100000001
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.649422,
+                  "longitude": -79.384315
+                }
+              },
+              "navigationInstruction": {
+                "instructions": "Streetcar towards Queen to Neville Park"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "13.8 km"
+                },
+                "staticDuration": {
+                  "text": "41 mins"
+                }
+              },
+              "transitDetails": {
+                "stopDetails": {
+                  "arrivalStop": {
+                    "name": "York St at Adelaide St West",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.649422,
+                        "longitude": -79.384315
+                      }
+                    }
+                  },
+                  "arrivalTime": "2025-12-21T07:44:33Z",
+                  "departureStop": {
+                    "name": "Lake Shore Blvd West at Colonel Samuel Smith Park Dr",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.598045000000006,
+                        "longitude": -79.51718100000001
+                      }
+                    }
+                  },
+                  "departureTime": "2025-12-21T07:03:32Z"
+                },
+                "localizedValues": {
+                  "arrivalTime": {
+                    "time": {
+                      "text": "2:44 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  },
+                  "departureTime": {
+                    "time": {
+                      "text": "2:03 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  }
+                },
+                "headsign": "Queen to Neville Park",
+                "transitLine": {
+                  "agencies": [
+                    {
+                      "name": "TTC",
+                      "phoneNumber": "+1 416-393-4636",
+                      "uri": "https://www.ttc.ca/"
+                    }
+                  ],
+                  "name": "Queen Night Streetcar",
+                  "color": "#ffffff",
+                  "nameShort": "301",
+                  "textColor": "#0054a6",
+                  "vehicle": {
+                    "name": {
+                      "text": "Streetcar"
+                    },
+                    "type": "TRAM",
+                    "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/tram2.png"
+                  }
+                },
+                "stopCount": 47
+              },
+              "travelMode": "TRANSIT"
+            },
+            {
+              "distanceMeters": 30,
+              "staticDuration": "24s",
+              "polyline": {
+                "encodedPolyline": "}gliGtvocNb@O"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6494326,
+                  "longitude": -79.38426749999999
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6492514,
+                  "longitude": -79.38419209999999
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head south on York St toward Adelaide St W"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "30 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 172,
+              "staticDuration": "141s",
+              "polyline": {
+                "encodedPolyline": "yfliGdvocN{AcLJEK?"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6492514,
+                  "longitude": -79.38419209999999
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.649709900000005,
+                  "longitude": -79.3820558
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_LEFT",
+                "instructions": "Turn left onto Adelaide St W\nDestination will be on the left"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.2 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            }
+          ],
+          "localizedValues": {
+            "distance": {
+              "text": "38.0 km"
+            },
+            "duration": {
+              "text": "2 hours 12 mins"
+            },
+            "staticDuration": {
+              "text": "2 hours 12 mins"
+            }
+          },
+          "stepsOverview": {
+            "multiModalSegments": [
+              {
+                "stepStartIndex": 0,
+                "stepEndIndex": 0,
+                "navigationInstruction": {
+                  "instructions": "Walk to Laird Rd At Turnstone Cres"
+                },
+                "travelMode": "WALK"
+              },
+              {
+                "stepStartIndex": 1,
+                "stepEndIndex": 1,
+                "navigationInstruction": {
+                  "instructions": "Bus towards 1 E Dundas To Kipling Terminal"
+                },
+                "travelMode": "TRANSIT"
+              },
+              {
+                "stepStartIndex": 2,
+                "stepEndIndex": 7,
+                "navigationInstruction": {
+                  "instructions": "Walk to Kipling Station at Bus Bay 6"
+                },
+                "travelMode": "WALK"
+              },
+              {
+                "stepStartIndex": 8,
+                "stepEndIndex": 8,
+                "navigationInstruction": {
+                  "instructions": "Bus towards Kipling South to Lake Shore"
+                },
+                "travelMode": "TRANSIT"
+              },
+              {
+                "stepStartIndex": 9,
+                "stepEndIndex": 9,
+                "navigationInstruction": {
+                  "instructions": "Walk to Lake Shore Blvd West at Colonel Samuel Smith Park Dr"
+                },
+                "travelMode": "WALK"
+              },
+              {
+                "stepStartIndex": 10,
+                "stepEndIndex": 10,
+                "navigationInstruction": {
+                  "instructions": "Streetcar towards Queen to Neville Park"
+                },
+                "travelMode": "TRANSIT"
+              },
+              {
+                "stepStartIndex": 11,
+                "stepEndIndex": 12,
+                "travelMode": "WALK"
+              }
+            ]
+          }
+        }
+      ],
+      "distanceMeters": 38031,
+      "duration": "7912s",
+      "staticDuration": "7912s",
+      "polyline": {
+        "encodedPolyline": "mnshGjekeNsAyAP]kD{D@CIRiFaGqBwBvBeDFYdBoCTE`EiGjBsCwHqIwH}HsMyNwDgEuBoCcBkBuA{AqEeF_IyI_FyFIEG@kBqBCQgFiGsCgDcAuAcCwCw@y@cCwCmByBwCkD_CiCmDiE{@sAeCqF}E_LsBeFGKMKiBmEw@cBqAcC{@oAGYQ_@qDoFkAoAeA{@_Ao@}@i@kEmByDsA]GmCeAoB{@u@g@uAw@cB}AkC}C[EaD}DOg@aOiQ{ReVqO_R{@iAk@e@MAqA{AAYw@cAaKoLcDgDgGgHqLyNaTsXOM_@U_CoCsPmS}NkQy@}@kP_Sw@cA_CmCeYe]}@_AK[k@u@iAmAeNeP}IeKo@cAoFgGSAiJoKm@q@i@e@_AsAsByBsCeDcIyIuA_BcN}NySiV{JgLIYe@i@kHkJOMM@mGeH}I{J_CeCmG}GwCcDgFqFgJsJ{CmDyE}EcBaByKaMmFiFcDmD{@mA}@}Au@gBm@{BAq@qA{IqA{J?OuB}P]_C}Hwb@}@qGk@cEIIGAe@yDe@oCa@_Bi@wAyEgLaAoBeAuAeK}K{CqCJ[@A]W[]mCuBuAkAe@c@k@a@oC}BYYv@sAv@q@b@W`@KA{@Ks@CYNYeAoAV_AKP{BoCe@s@O@MHIJqBdAk@r@a@c@COGq@lTiG`Bu@bBu@`A[HShv@iVvIiBjQwFRFlJeDhBa@~G{@~Aa@bAa@|AeALDb@GH@BUXUHCC[fCkBDMfBq@rw@yVLBvFgBHMh_@iLvCaADRGDTK@Fd@O?GD\\qFu`@_ByJGg@SsDc@oAi@mEk@}D]mEa@eAg@sD[mE]aAi@uD[gE]gAk@iEWuD_@cAI{@MyDSeESyAuA{Ew@_Ci@aCqAuB_@w@mA_Bi@k@uAaAsAo@eCaAs@Sq@MqAOoEm@y@RuGUuBUgAa@y@LaIo@aB_@aA}@oASoDuBy@K{BcA{G{D{@CaCcAiCyAy@Wq@a@m@m@i@y@[mAeA_HUsAkAaBcAgA}AcAqAs@}BaBc@_@wDqBuJyD{EgBcEsAaCk@[GaAa@{@y@wAOk@?iBTMDaAvAUNS@KCu@i@}@Yi@kEc@uAw@aAk@m@}AgAyBaBsC_DyFqF]_@g@{@GBuAwBaA{Bo@oBi@_CYqCMcD}AsOe@wCaCaLoAsGe@{CWyBu@uLWcWB{I?mBTyAjAyFtBiU?aAiA}Lc@uD_@{CgA_KyCcVuBkR}Eaa@iD_Zc@wAQuA]uE[iAy@aHs@_GByAe@iAk@cFQ_Ee@uAyAgLGaC_@iAwAmLK}Ca@uA{AcMGuB]mAo@cFWiE]sAkAaJQuBOoAg@}FyAwMuEy]s@yF{AqIeA{HUeE_@}@iAmI|DgAfDu@AIb@O{AcLJEK?"
+      },
+      "viewport": {
+        "low": {
+          "latitude": 43.522470399999996,
+          "longitude": -79.6887004
+        },
+        "high": {
+          "latitude": 43.651210899999995,
+          "longitude": -79.3820558
+        }
+      },
+      "travelAdvisory": {
+        "transitFare": {}
+      },
+      "localizedValues": {
+        "distance": {
+          "text": "38.0 km"
+        },
+        "duration": {
+          "text": "2 hours 12 mins"
+        },
+        "staticDuration": {
+          "text": "2 hours 12 mins"
+        },
+        "transitFare": {}
+      },
+      "routeLabels": [
+        "DEFAULT_ROUTE_ALTERNATE"
+      ]
+    },
+    {
+      "legs": [
+        {
+          "distanceMeters": 34736,
+          "duration": "6207s",
+          "staticDuration": "6207s",
+          "polyline": {
+            "encodedPolyline": "mnshGjekeNj@n@R_@xBdC@CKToSmUqBwBvBeDFYdBoCTE`EiGjBsCwHqIwH}HsMyNwDgEuBoCcBkBuA{AqEeF_IyI_FyFIEG@kBqBCQgFiGsCgDcAuAcCwCw@y@cCwCmByBwCkD_CiCmDiE{@sAeCqF}E_LsBeFGKMKiBmEw@cBqAcC{@oAGYQ_@qDoFkAoAeA{@_Ao@}@i@kEmByDsA]GmCeAoB{@u@g@uAw@cB}AkC}C[EaD}DOg@aOiQ{ReVqO_R{@iAk@e@MAqA{AAYw@cAaKoLcDgDgGgHqLyNaTsXOM_@U_CoCsPmS}NkQy@}@kP_Sw@cA_CmCeYe]}@_AK[k@u@iAmAeNeP}IeKo@cAoFgGSAiJoKm@q@i@e@_AsAsByBsCeDcIyIuA_BcN}NySiV{JgLIYe@i@kHkJOMM@mGeH}I{J_CeCmG}GwCcDgFqFgJsJ{CmDyE}EcBaByKaMmFiFcDmD{@mA}@}Au@gBm@{BAq@qA{IqA{J?OuB}P]_C}Hwb@}@qGk@cEIIGAe@yDe@oCa@_Bi@wAyEgLaAoBeAuAeK}K{CqCJ[@A]W[]mCuBuAkAZy@Bi@XaAa@YBSkAgM}@UgGsH}LsLgMoLaAoA{A_Dk@uBeAyH}@gH}@oGWaBu@_Ge@gEe@uFcAmKqBiNIeAyByOy@_F_AsKYeCg@_CsAeIo@cFu@}EyCoTQmBAqAHyFJiAjAcIv@oDx@qDdEiOb@gBPyDFqHIuCK_Ae@uCWy@OYOQgBaD_@{@So@oBmMkA_Ea@cCeBmMiByMaCiQyD_YqCiT}DsYeA{Hq@gF{@yGeEyYuC}PsBsMoCaRSsBQiE]sNAkB@w@CcAUmCoA}KcBqMEu@yA_L}A{JsAuGc@iCaCkR{C}TsEy]kAyG_A}Ds@qFy@gHiBaNaBaNqCgUs@_FkD{X}@{HmAyIqDk[i@cDcA}Cg@eCMyBIcFVACdE@LrBo@BNYHBJCQjNoEdGgBjDkAr_@mLpC{@hBu@~Z_KfRaGBN?BBA?BZK?EdD_AfA_@`@|CE^Dl@Ln@h@`EBAn@bF"
+          },
+          "startLocation": {
+            "latLng": {
+              "latitude": 43.522470399999996,
+              "longitude": -79.6887004
+            }
+          },
+          "endLocation": {
+            "latLng": {
+              "latitude": 43.649709900000005,
+              "longitude": -79.3820558
+            }
+          },
+          "steps": [
+            {
+              "distanceMeters": 118,
+              "staticDuration": "108s",
+              "polyline": {
+                "encodedPolyline": "mnshGjekeNj@n@R_@xBdC"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.522470399999996,
+                  "longitude": -79.6887004
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.521543799999996,
+                  "longitude": -79.6894465
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head southwest on Laird Rd toward Colonial Dr"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.1 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 18290,
+              "staticDuration": "2460s",
+              "polyline": {
+                "encodedPolyline": "qhshG|ikeNKToSmUqBwBvBeDFYdBoCTE`EiGjBsCwHqIwH}HsMyNwDgEuBoCcBkBuA{AqEeF_IyI_FyFIEG@kBqBCQgFiGsCgDcAuAcCwCw@y@cCwCmByBwCkD_CiCmDiE{@sAeCqF}E_LsBeFGKMKiBmEw@cBqAcC{@oAGYQ_@qDoFkAoAeA{@_Ao@}@i@kEmByDsA]GmCeAoB{@u@g@uAw@cB}AkC}C[EaD}DOg@aOiQ{ReVqO_R{@iAk@e@MAqA{AAYw@cAaKoLcDgDgGgHqLyNaTsXOM_@U_CoCsPmS}NkQy@}@kP_Sw@cA_CmCeYe]}@_AK[k@u@iAmAeNeP}IeKo@cAoFgGSAiJoKm@q@i@e@_AsAsByBsCeDcIyIuA_BcN}NySiV{JgLIYe@i@kHkJOMM@mGeH}I{J_CeCmG}GwCcDgFqFgJsJ{CmDyE}EcBaByKaMmFiFcDmD{@mA}@}Au@gBm@{BAq@qA{IqA{J?OuB}P]_C}Hwb@}@qGk@cEIIGAe@yDe@oCa@_Bi@wAyEgLaAoBeAuAeK}K{CqCJ["
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.521532199999996,
+                  "longitude": -79.6894269
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.635838,
+                  "longitude": -79.5401
+                }
+              },
+              "navigationInstruction": {
+                "instructions": "Bus towards 1 E Dundas To Kipling Terminal"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "18.3 km"
+                },
+                "staticDuration": {
+                  "text": "41 mins"
+                }
+              },
+              "transitDetails": {
+                "stopDetails": {
+                  "arrivalStop": {
+                    "name": "Dundas St West at Subway Cres",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.635838,
+                        "longitude": -79.5401
+                      }
+                    }
+                  },
+                  "arrivalTime": "2025-12-21T06:18:00Z",
+                  "departureStop": {
+                    "name": "Laird Rd At Colonial Dr (#1662)",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.521532199999996,
+                        "longitude": -79.6894269
+                      }
+                    }
+                  },
+                  "departureTime": "2025-12-21T05:37:00Z"
+                },
+                "localizedValues": {
+                  "arrivalTime": {
+                    "time": {
+                      "text": "1:18 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  },
+                  "departureTime": {
+                    "time": {
+                      "text": "12:37 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  }
+                },
+                "headsign": "1 E Dundas To Kipling Terminal",
+                "transitLine": {
+                  "agencies": [
+                    {
+                      "name": "MiWay",
+                      "phoneNumber": "+1 905-615-4636",
+                      "uri": "http://www.miway.ca/"
+                    }
+                  ],
+                  "name": "Dundas",
+                  "color": "#d33517",
+                  "nameShort": "1",
+                  "textColor": "#ffffff",
+                  "vehicle": {
+                    "name": {
+                      "text": "Bus"
+                    },
+                    "type": "BUS",
+                    "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                  }
+                },
+                "stopCount": 59
+              },
+              "travelMode": "TRANSIT"
+            },
+            {
+              "distanceMeters": 139,
+              "staticDuration": "114s",
+              "polyline": {
+                "encodedPolyline": "}riiGpdndN]W[]mCuB"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6358348,
+                  "longitude": -79.5400927
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.636832999999996,
+                  "longitude": -79.53922949999999
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head northeast on Dundas St W toward Poplar Ave"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.1 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 60,
+              "staticDuration": "49s",
+              "polyline": {
+                "encodedPolyline": "eyiiGd_ndNuAkA"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.636832999999996,
+                  "longitude": -79.53922949999999
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.637263499999996,
+                  "longitude": -79.5388464
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_SLIGHT_RIGHT",
+                "instructions": "Slight right to stay on Dundas St W"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "60 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 83,
+              "staticDuration": "61s",
+              "polyline": {
+                "encodedPolyline": "{{iiGx|mdNZy@Bi@XaA"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.637263499999996,
+                  "longitude": -79.5388464
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6369711,
+                  "longitude": -79.5380232
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "83 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 21,
+              "staticDuration": "19s",
+              "polyline": {
+                "encodedPolyline": "aziiGrwmdNa@Y"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6369711,
+                  "longitude": -79.5380232
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.637137599999996,
+                  "longitude": -79.5378929
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_LEFT",
+                "instructions": "Turn left"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "21 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 188,
+              "staticDuration": "188s",
+              "polyline": {
+                "encodedPolyline": "_{iiGdvmdNkAgM"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.63712220000001,
+                  "longitude": -79.5377875
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6374951,
+                  "longitude": -79.5355063
+                }
+              },
+              "navigationInstruction": {
+                "instructions": "Take entrance "
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.2 km"
+                },
+                "staticDuration": {
+                  "text": "3 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 13008,
+              "staticDuration": "1500s",
+              "polyline": {
+                "encodedPolyline": "k}iiG|gmdN}@UgGsH}LsLgMoLaAoA{A_Dk@uBeAyH}@gH}@oGWaBu@_Ge@gEe@uFcAmKqBiNIeAyByOy@_F_AsKYeCg@_CsAeIo@cFu@}EyCoTQmBAqAHyFJiAjAcIv@oDx@qDdEiOb@gBPyDFqHIuCK_Ae@uCWy@OYOQgBaD_@{@So@oBmMkA_Ea@cCeBmMiByMaCiQyD_YqCiT}DsYeA{Hq@gF{@yGeEyYuC}PsBsMoCaRSsBQiE]sNAkB@w@CcAUmCoA}KcBqMEu@yA_L}A{JsAuGc@iCaCkR{C}TsEy]kAyG_A}Ds@qFy@gHiBaNaBaNqCgUs@_FkD{X}@{HmAyIqDk[i@cDcA}Cg@eCMyBIcFVA"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6374951,
+                  "longitude": -79.5355063
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.670923699999996,
+                  "longitude": -79.38594839999999
+                }
+              },
+              "navigationInstruction": {
+                "instructions": "Subway towards Line 2 (Bloor-Danforth) to Kennedy Station"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "13.0 km"
+                },
+                "staticDuration": {
+                  "text": "25 mins"
+                }
+              },
+              "transitDetails": {
+                "stopDetails": {
+                  "arrivalStop": {
+                    "name": "Bloor-Yonge",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.670923699999996,
+                        "longitude": -79.38594839999999
+                      }
+                    }
+                  },
+                  "arrivalTime": "2025-12-21T06:56:00Z",
+                  "departureStop": {
+                    "name": "Kipling",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.6374951,
+                        "longitude": -79.5355063
+                      }
+                    }
+                  },
+                  "departureTime": "2025-12-21T06:31:00Z"
+                },
+                "localizedValues": {
+                  "arrivalTime": {
+                    "time": {
+                      "text": "1:56 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  },
+                  "departureTime": {
+                    "time": {
+                      "text": "1:31 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  }
+                },
+                "headsign": "Line 2 (Bloor-Danforth) to Kennedy Station",
+                "transitLine": {
+                  "agencies": [
+                    {
+                      "name": "TTC",
+                      "phoneNumber": "+1 416-393-4636",
+                      "uri": "https://www.ttc.ca/"
+                    }
+                  ],
+                  "name": "Line 2 Bloor–Danforth",
+                  "color": "#009247",
+                  "nameShort": "2",
+                  "textColor": "#ffffff",
+                  "vehicle": {
+                    "name": {
+                      "text": "Subway"
+                    },
+                    "type": "SUBWAY",
+                    "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/subway2.png"
+                  }
+                },
+                "stopCount": 18
+              },
+              "travelMode": "TRANSIT"
+            },
+            {
+              "distanceMeters": 79,
+              "staticDuration": "68s",
+              "polyline": {
+                "encodedPolyline": "gnpiGdapcNCdE"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.670923699999996,
+                  "longitude": -79.38594839999999
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.670943,
+                  "longitude": -79.3869387
+                }
+              },
+              "navigationInstruction": {
+                "instructions": "Take exit Subway, Yonge St. Left to Bloor Street"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "79 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 78,
+              "staticDuration": "62s",
+              "polyline": {
+                "encodedPolyline": "inpiGxgpcNrBo@"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6709277,
+                  "longitude": -79.38700949999999
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.670345399999995,
+                  "longitude": -79.38677340000001
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head south on Yonge St toward Bloor St W"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "78 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 26,
+              "staticDuration": "31s",
+              "polyline": {
+                "encodedPolyline": "ujpiGhfpcNBNYH"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.670345399999995,
+                  "longitude": -79.38677340000001
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.670460399999996,
+                  "longitude": -79.3869047
+                }
+              },
+              "navigationInstruction": {},
+              "localizedValues": {
+                "distance": {
+                  "text": "26 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 2185,
+              "staticDuration": "438s",
+              "polyline": {
+                "encodedPolyline": "gkpiGngpcNCQjNoEdGgBjDkAr_@mLpC{@hBu@~Z_KfRaGBN"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.670441000000004,
+                  "longitude": -79.386955
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.651768000000004,
+                  "longitude": -79.379082
+                }
+              },
+              "navigationInstruction": {
+                "instructions": "Bus towards Yonge to Queens Quay"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "2.2 km"
+                },
+                "staticDuration": {
+                  "text": "7 mins"
+                }
+              },
+              "transitDetails": {
+                "stopDetails": {
+                  "arrivalStop": {
+                    "name": "Yonge St at Richmond St West",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.651768000000004,
+                        "longitude": -79.379082
+                      }
+                    }
+                  },
+                  "arrivalTime": "2025-12-21T07:12:10Z",
+                  "departureStop": {
+                    "name": "Yonge St at Bloor St West - Bloor Station",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.670441000000004,
+                        "longitude": -79.386955
+                      }
+                    }
+                  },
+                  "departureTime": "2025-12-21T07:04:52Z"
+                },
+                "localizedValues": {
+                  "arrivalTime": {
+                    "time": {
+                      "text": "2:12 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  },
+                  "departureTime": {
+                    "time": {
+                      "text": "2:04 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  }
+                },
+                "headsign": "Yonge to Queens Quay",
+                "transitLine": {
+                  "agencies": [
+                    {
+                      "name": "TTC",
+                      "phoneNumber": "+1 416-393-4636",
+                      "uri": "https://www.ttc.ca/"
+                    }
+                  ],
+                  "name": "Yonge",
+                  "color": "#ffffff",
+                  "nameShort": "320",
+                  "textColor": "#0154a6",
+                  "vehicle": {
+                    "name": {
+                      "text": "Bus"
+                    },
+                    "type": "BUS",
+                    "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                  }
+                },
+                "stopCount": 13
+              },
+              "travelMode": "TRANSIT"
+            },
+            {
+              "distanceMeters": 159,
+              "staticDuration": "134s",
+              "polyline": {
+                "encodedPolyline": "qvliGjvncNBA?BZK?EdD_AfA_@"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6517653,
+                  "longitude": -79.3790953
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6504227,
+                  "longitude": -79.3785431
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head south on Yonge St toward Richmond St W"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.2 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 302,
+              "staticDuration": "255s",
+              "polyline": {
+                "encodedPolyline": "cnliGzrncN`@|CE^Dl@Ln@h@`EBAn@bF"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6504227,
+                  "longitude": -79.3785431
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.649709900000005,
+                  "longitude": -79.3820558
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right onto Adelaide St W\nDestination will be on the right"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.3 km"
+                },
+                "staticDuration": {
+                  "text": "4 mins"
+                }
+              },
+              "travelMode": "WALK"
+            }
+          ],
+          "localizedValues": {
+            "distance": {
+              "text": "34.7 km"
+            },
+            "duration": {
+              "text": "1 hour 43 mins"
+            },
+            "staticDuration": {
+              "text": "1 hour 43 mins"
+            }
+          },
+          "stepsOverview": {
+            "multiModalSegments": [
+              {
+                "stepStartIndex": 0,
+                "stepEndIndex": 0,
+                "navigationInstruction": {
+                  "instructions": "Walk to Laird Rd At Colonial Dr (#1662)"
+                },
+                "travelMode": "WALK"
+              },
+              {
+                "stepStartIndex": 1,
+                "stepEndIndex": 1,
+                "navigationInstruction": {
+                  "instructions": "Bus towards 1 E Dundas To Kipling Terminal"
+                },
+                "travelMode": "TRANSIT"
+              },
+              {
+                "stepStartIndex": 2,
+                "stepEndIndex": 6,
+                "navigationInstruction": {
+                  "instructions": "Walk to Kipling"
+                },
+                "travelMode": "WALK"
+              },
+              {
+                "stepStartIndex": 7,
+                "stepEndIndex": 7,
+                "navigationInstruction": {
+                  "instructions": "Subway towards Line 2 (Bloor-Danforth) to Kennedy Station"
+                },
+                "travelMode": "TRANSIT"
+              },
+              {
+                "stepStartIndex": 8,
+                "stepEndIndex": 10,
+                "navigationInstruction": {
+                  "instructions": "Walk to Yonge St at Bloor St West - Bloor Station"
+                },
+                "travelMode": "WALK"
+              },
+              {
+                "stepStartIndex": 11,
+                "stepEndIndex": 11,
+                "navigationInstruction": {
+                  "instructions": "Bus towards Yonge to Queens Quay"
+                },
+                "travelMode": "TRANSIT"
+              },
+              {
+                "stepStartIndex": 12,
+                "stepEndIndex": 13,
+                "travelMode": "WALK"
+              }
+            ]
+          }
+        }
+      ],
+      "distanceMeters": 34736,
+      "duration": "6208s",
+      "staticDuration": "6208s",
+      "polyline": {
+        "encodedPolyline": "mnshGjekeNj@n@R_@xBdC@CKToSmUqBwBvBeDFYdBoCTE`EiGjBsCwHqIwH}HsMyNwDgEuBoCcBkBuA{AqEeF_IyI_FyFIEG@kBqBCQgFiGsCgDcAuAcCwCw@y@cCwCmByBwCkD_CiCmDiE{@sAeCqF}E_LsBeFGKMKiBmEw@cBqAcC{@oAGYQ_@qDoFkAoAeA{@_Ao@}@i@kEmByDsA]GmCeAoB{@u@g@uAw@cB}AkC}C[EaD}DOg@aOiQ{ReVqO_R{@iAk@e@MAqA{AAYw@cAaKoLcDgDgGgHqLyNaTsXOM_@U_CoCsPmS}NkQy@}@kP_Sw@cA_CmCeYe]}@_AK[k@u@iAmAeNeP}IeKo@cAoFgGSAiJoKm@q@i@e@_AsAsByBsCeDcIyIuA_BcN}NySiV{JgLIYe@i@kHkJOMM@mGeH}I{J_CeCmG}GwCcDgFqFgJsJ{CmDyE}EcBaByKaMmFiFcDmD{@mA}@}Au@gBm@{BAq@qA{IqA{J?OuB}P]_C}Hwb@}@qGk@cEIIGAe@yDe@oCa@_Bi@wAyEgLaAoBeAuAeK}K{CqCJ[@A]W[]mCuBuAkAZy@Bi@XaAa@YBSkAgM}@UgGsH}LsLgMoLaAoA{A_Dk@uBeAyH}@gH}@oGWaBu@_Ge@gEe@uFcAmKqBiNIeAyByOy@_F_AsKYeCg@_CsAeIo@cFu@}EyCoTQmBAqAHyFJiAjAcIv@oDx@qDdEiOb@gBPyDFqHIuCK_Ae@uCWy@OYOQgBaD_@{@So@oBmMkA_Ea@cCeBmMiByMaCiQyD_YqCiT}DsYeA{Hq@gF{@yGeEyYuC}PsBsMoCaRSsBQiE]sNAkB@w@CcAUmCoA}KcBqMEu@yA_L}A{JsAuGc@iCaCkR{C}TsEy]kAyG_A}Ds@qFy@gHiBaNaBaNqCgUs@_FkD{X}@{HmAyIqDk[i@cDcA}Cg@eCMyBIcFVACdE@LrBo@BNYHBJCQjNoEdGgBjDkAr_@mLpC{@hBu@~Z_KfRaGBN?BBA?BZK?EdD_AfA_@`@|CE^Dl@Ln@h@`EBAn@bF"
+      },
+      "viewport": {
+        "low": {
+          "latitude": 43.521532199999996,
+          "longitude": -79.6895356
+        },
+        "high": {
+          "latitude": 43.6710383,
+          "longitude": -79.3785431
+        }
+      },
+      "travelAdvisory": {
+        "transitFare": {}
+      },
+      "localizedValues": {
+        "distance": {
+          "text": "34.7 km"
+        },
+        "duration": {
+          "text": "1 hour 43 mins"
+        },
+        "staticDuration": {
+          "text": "1 hour 43 mins"
+        },
+        "transitFare": {}
+      },
+      "routeLabels": [
+        "DEFAULT_ROUTE_ALTERNATE"
+      ]
+    },
+    {
+      "legs": [
+        {
+          "distanceMeters": 38031,
+          "duration": "7971s",
+          "staticDuration": "7971s",
+          "polyline": {
+            "encodedPolyline": "mnshGjekeNsAyAP]kD{D@CIRiFaGqBwBvBeDFYdBoCTE`EiGjBsCwHqIwH}HsMyNwDgEuBoCcBkBuA{AqEeF_IyI_FyFIEG@kBqBCQgFiGsCgDcAuAcCwCw@y@cCwCmByBwCkD_CiCmDiE{@sAeCqF}E_LsBeFGKMKiBmEw@cBqAcC{@oAGYQ_@qDoFkAoAeA{@_Ao@}@i@kEmByDsA]GmCeAoB{@u@g@uAw@cB}AkC}C[EaD}DOg@aOiQ{ReVqO_R{@iAk@e@MAqA{AAYw@cAaKoLcDgDgGgHqLyNaTsXOM_@U_CoCsPmS}NkQy@}@kP_Sw@cA_CmCeYe]}@_AK[k@u@iAmAeNeP}IeKo@cAoFgGSAiJoKm@q@i@e@_AsAsByBsCeDcIyIuA_BcN}NySiV{JgLIYe@i@kHkJOMM@mGeH}I{J_CeCmG}GwCcDgFqFgJsJ{CmDyE}EcBaByKaMmFiFcDmD{@mA}@}Au@gBm@{BAq@qA{IqA{J?OuB}P]_C}Hwb@}@qGk@cEIIGAe@yDe@oCa@_Bi@wAyEgLaAoBeAuAeK}K{CqCJ[@A]W[]mCuBuAkAe@c@k@a@oC}BYYv@sAv@q@b@W`@KA{@Ks@CYNYeAoAV_AKP{BoCe@s@O@MHIJqBdAk@r@a@c@COGq@lTiG`Bu@bBu@`A[HShv@iVvIiBjQwFRFlJeDhBa@~G{@~Aa@bAa@|AeALDb@GH@BUXUHCC[fCkBDMfBq@rw@yVLBvFgBHMh_@iLvCaADRGDTK@Fd@O?GD\\qFu`@_ByJGg@SsDc@oAi@mEk@}D]mEa@eAg@sD[mE]aAi@uD[gE]gAk@iEWuD_@cAI{@MyDSeESyAuA{Ew@_Ci@aCqAuB_@w@mA_Bi@k@uAaAsAo@eCaAs@Sq@MqAOoEm@y@RuGUuBUgAa@y@LaIo@aB_@aA}@oASoDuBy@K{BcA{G{D{@CaCcAiCyAy@Wq@a@m@m@i@y@[mAeA_HUsAkAaBcAgA}AcAqAs@}BaBc@_@wDqBuJyD{EgBcEsAaCk@[GaAa@{@y@wAOk@?iBTMDaAvAUNS@KCu@i@}@Yi@kEc@uAw@aAk@m@}AgAyBaBsC_DyFqF]_@g@{@GBuAwBaA{Bo@oBi@_CYqCMcD}AsOe@wCaCaLoAsGe@{CWyBu@uLWcWB{I?mBTyAjAyFtBiU?aAiA}Lc@uD_@{CgA_KyCcVuBkR}Eaa@iD_Zc@wAQuA]uE[iAy@aHs@_GByAe@iAk@cFQ_Ee@uAyAgLGaC_@iAwAmLK}Ca@uA{AcMGuB]mAo@cFWiE]sAkAaJQuBOoAg@}FyAwMuEy]s@yF{AqIeA{HUeE_@}@iAmI|DgAfDu@AIb@O{AcLJEK?"
+          },
+          "startLocation": {
+            "latLng": {
+              "latitude": 43.522470399999996,
+              "longitude": -79.6887004
+            }
+          },
+          "endLocation": {
+            "latLng": {
+              "latitude": 43.649709900000005,
+              "longitude": -79.3820558
+            }
+          },
+          "steps": [
+            {
+              "distanceMeters": 181,
+              "staticDuration": "153s",
+              "polyline": {
+                "encodedPolyline": "mnshGjekeNsAyAP]kD{D"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.522470399999996,
+                  "longitude": -79.6887004
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.5236602,
+                  "longitude": -79.68716359999999
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head northeast on Laird Rd toward Turnstone Crescent\nDestination will be on the right"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.2 km"
+                },
+                "staticDuration": {
+                  "text": "3 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 17989,
+              "staticDuration": "2460s",
+              "polyline": {
+                "encodedPolyline": "yushGr{jeNIRiFaGqBwBvBeDFYdBoCTE`EiGjBsCwHqIwH}HsMyNwDgEuBoCcBkBuA{AqEeF_IyI_FyFIEG@kBqBCQgFiGsCgDcAuAcCwCw@y@cCwCmByBwCkD_CiCmDiE{@sAeCqF}E_LsBeFGKMKiBmEw@cBqAcC{@oAGYQ_@qDoFkAoAeA{@_Ao@}@i@kEmByDsA]GmCeAoB{@u@g@uAw@cB}AkC}C[EaD}DOg@aOiQ{ReVqO_R{@iAk@e@MAqA{AAYw@cAaKoLcDgDgGgHqLyNaTsXOM_@U_CoCsPmS}NkQy@}@kP_Sw@cA_CmCeYe]}@_AK[k@u@iAmAeNeP}IeKo@cAoFgGSAiJoKm@q@i@e@_AsAsByBsCeDcIyIuA_BcN}NySiV{JgLIYe@i@kHkJOMM@mGeH}I{J_CeCmG}GwCcDgFqFgJsJ{CmDyE}EcBaByKaMmFiFcDmD{@mA}@}Au@gBm@{BAq@qA{IqA{J?OuB}P]_C}Hwb@}@qGk@cEIIGAe@yDe@oCa@_Bi@wAyEgLaAoBeAuAeK}K{CqCJ["
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.523649,
+                  "longitude": -79.687144
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.635838,
+                  "longitude": -79.5401
+                }
+              },
+              "navigationInstruction": {
+                "instructions": "Bus towards 1 E Dundas To Kipling Terminal"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "18.0 km"
+                },
+                "staticDuration": {
+                  "text": "41 mins"
+                }
+              },
+              "transitDetails": {
+                "stopDetails": {
+                  "arrivalStop": {
+                    "name": "Dundas St West at Subway Cres",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.635838,
+                        "longitude": -79.5401
+                      }
+                    }
+                  },
+                  "arrivalTime": "2025-12-21T05:33:00Z",
+                  "departureStop": {
+                    "name": "Laird Rd At Turnstone Cres",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.523649,
+                        "longitude": -79.687144
+                      }
+                    }
+                  },
+                  "departureTime": "2025-12-21T04:52:00Z"
+                },
+                "localizedValues": {
+                  "arrivalTime": {
+                    "time": {
+                      "text": "12:33 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  },
+                  "departureTime": {
+                    "time": {
+                      "text": "11:52 PM"
+                    },
+                    "timeZone": "America/Toronto"
+                  }
+                },
+                "headsign": "1 E Dundas To Kipling Terminal",
+                "transitLine": {
+                  "agencies": [
+                    {
+                      "name": "MiWay",
+                      "phoneNumber": "+1 905-615-4636",
+                      "uri": "http://www.miway.ca/"
+                    }
+                  ],
+                  "name": "Dundas",
+                  "color": "#d33517",
+                  "nameShort": "1",
+                  "textColor": "#ffffff",
+                  "vehicle": {
+                    "name": {
+                      "text": "Bus"
+                    },
+                    "type": "BUS",
+                    "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                  }
+                },
+                "stopCount": 58
+              },
+              "travelMode": "TRANSIT"
+            },
+            {
+              "distanceMeters": 139,
+              "staticDuration": "114s",
+              "polyline": {
+                "encodedPolyline": "}riiGpdndN]W[]mCuB"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6358348,
+                  "longitude": -79.5400927
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.636832999999996,
+                  "longitude": -79.53922949999999
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head northeast on Dundas St W toward Poplar Ave"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.1 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 208,
+              "staticDuration": "174s",
+              "polyline": {
+                "encodedPolyline": "eyiiGd_ndNuAkAe@c@k@a@oC}BYY"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.636832999999996,
+                  "longitude": -79.53922949999999
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.638515299999995,
+                  "longitude": -79.5377446
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_SLIGHT_RIGHT",
+                "instructions": "Slight right to stay on Dundas St W"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.2 km"
+                },
+                "staticDuration": {
+                  "text": "3 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 128,
+              "staticDuration": "91s",
+              "polyline": {
+                "encodedPolyline": "wcjiGzumdNv@sAv@q@b@W`@K"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.638515299999995,
+                  "longitude": -79.5377446
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.637606399999996,
+                  "longitude": -79.5368931
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right onto Aukland Rd"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.1 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 65,
+              "staticDuration": "51s",
+              "polyline": {
+                "encodedPolyline": "a~iiGppmdNA{@Ks@CY"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.637606399999996,
+                  "longitude": -79.5368931
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6377041,
+                  "longitude": -79.53620149999999
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_LEFT",
+                "instructions": "Turn left toward St Albans Rd"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "65 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 9,
+              "staticDuration": "7s",
+              "polyline": {
+                "encodedPolyline": "s~iiGflmdN"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6377041,
+                  "longitude": -79.53620149999999
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6377041,
+                  "longitude": -79.53620149999999
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right toward St Albans Rd"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "9 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 50,
+              "staticDuration": "42s",
+              "polyline": {
+                "encodedPolyline": "s~iiGflmdNNYeAoA"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6377041,
+                  "longitude": -79.53620149999999
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.637966299999995,
+                  "longitude": -79.5356697
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_LEFT",
+                "instructions": "Turn left onto St Albans Rd\nDestination will be on the right"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "50 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 5185,
+              "staticDuration": "789s",
+              "polyline": {
+                "encodedPolyline": "q_jiG|fmdNKP{BoCe@s@O@MHIJqBdAk@r@a@c@COGq@lTiG`Bu@bBu@`A[HShv@iVvIiBjQwFRFlJeDhBa@~G{@~Aa@bAa@|AeALDb@GH@BUXUHCC[fCkBDMfBq@rw@yVLBvFgBHMh_@iLvCaADR"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.637851999999995,
+                  "longitude": -79.535347
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.598354,
+                  "longitude": -79.51714299999999
+                }
+              },
+              "navigationInstruction": {
+                "instructions": "Bus towards Kipling South to Lake Shore"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "5.2 km"
+                },
+                "staticDuration": {
+                  "text": "13 mins"
+                }
+              },
+              "transitDetails": {
+                "stopDetails": {
+                  "arrivalStop": {
+                    "name": "Kipling Ave at Lake Shore Blvd West",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.598354,
+                        "longitude": -79.51714299999999
+                      }
+                    }
+                  },
+                  "arrivalTime": "2025-12-21T06:02:09Z",
+                  "departureStop": {
+                    "name": "Kipling Station at Bus Bay 6",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.637851999999995,
+                        "longitude": -79.535347
+                      }
+                    }
+                  },
+                  "departureTime": "2025-12-21T05:49:00Z"
+                },
+                "localizedValues": {
+                  "arrivalTime": {
+                    "time": {
+                      "text": "1:02 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  },
+                  "departureTime": {
+                    "time": {
+                      "text": "12:49 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  }
+                },
+                "headsign": "Kipling South to Lake Shore",
+                "transitLine": {
+                  "agencies": [
+                    {
+                      "name": "TTC",
+                      "phoneNumber": "+1 416-393-4636",
+                      "uri": "https://www.ttc.ca/"
+                    }
+                  ],
+                  "name": "Kipling South",
+                  "color": "#ed1c24",
+                  "nameShort": "44",
+                  "textColor": "#ffffff",
+                  "vehicle": {
+                    "name": {
+                      "text": "Bus"
+                    },
+                    "type": "BUS",
+                    "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                  }
+                },
+                "stopCount": 17
+              },
+              "travelMode": "TRANSIT"
+            },
+            {
+              "distanceMeters": 36,
+              "staticDuration": "40s",
+              "polyline": {
+                "encodedPolyline": "}hbiGhuidNTK@Fd@O?G"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.598387699999996,
+                  "longitude": -79.5171721
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.5980813,
+                  "longitude": -79.5170308
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head south on Kipling Ave toward Lake Shore Blvd W\nDestination will be on the right"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "36 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 13839,
+              "staticDuration": "2461s",
+              "polyline": {
+                "encodedPolyline": "yfbiGjuidNqFu`@_ByJGg@SsDc@oAi@mEk@}D]mEa@eAg@sD[mE]aAi@uD[gE]gAk@iEWuD_@cAI{@MyDSeESyAuA{Ew@_Ci@aCqAuB_@w@mA_Bi@k@uAaAsAo@eCaAs@Sq@MqAOoEm@y@RuGUuBUgAa@y@LaIo@aB_@aA}@oASoDuBy@K{BcA{G{D{@CaCcAiCyAy@Wq@a@m@m@i@y@[mAeA_HUsAkAaBcAgA}AcAqAs@}BaBc@_@wDqBuJyD{EgBcEsAaCk@[GaAa@{@y@wAOk@?iBTMDaAvAUNS@KCu@i@}@Yi@kEc@uAw@aAk@m@}AgAyBaBsC_DyFqF]_@g@{@GBuAwBaA{Bo@oBi@_CYqCMcD}AsOe@wCaCaLoAsGe@{CWyBu@uLWcWB{I?mBTyAjAyFtBiU?aAiA}Lc@uD_@{CgA_KyCcVuBkR}Eaa@iD_Zc@wAQuA]uE[iAy@aHs@_GByAe@iAk@cFQ_Ee@uAyAgLGaC_@iAwAmLK}Ca@uA{AcMGuB]mAo@cFWiE]sAkAaJQuBOoAg@}FyAwMuEy]s@yF{AqIeA{HUeE_@}@iAmI|DgAfDu@"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.598045000000006,
+                  "longitude": -79.51718100000001
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.649422,
+                  "longitude": -79.384315
+                }
+              },
+              "navigationInstruction": {
+                "instructions": "Streetcar towards Queen to Neville Park"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "13.8 km"
+                },
+                "staticDuration": {
+                  "text": "41 mins"
+                }
+              },
+              "transitDetails": {
+                "stopDetails": {
+                  "arrivalStop": {
+                    "name": "York St at Adelaide St West",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.649422,
+                        "longitude": -79.384315
+                      }
+                    }
+                  },
+                  "arrivalTime": "2025-12-21T06:59:33Z",
+                  "departureStop": {
+                    "name": "Lake Shore Blvd West at Colonel Samuel Smith Park Dr",
+                    "location": {
+                      "latLng": {
+                        "latitude": 43.598045000000006,
+                        "longitude": -79.51718100000001
+                      }
+                    }
+                  },
+                  "departureTime": "2025-12-21T06:18:32Z"
+                },
+                "localizedValues": {
+                  "arrivalTime": {
+                    "time": {
+                      "text": "1:59 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  },
+                  "departureTime": {
+                    "time": {
+                      "text": "1:18 AM"
+                    },
+                    "timeZone": "America/Toronto"
+                  }
+                },
+                "headsign": "Queen to Neville Park",
+                "transitLine": {
+                  "agencies": [
+                    {
+                      "name": "TTC",
+                      "phoneNumber": "+1 416-393-4636",
+                      "uri": "https://www.ttc.ca/"
+                    }
+                  ],
+                  "name": "Queen Night Streetcar",
+                  "color": "#ffffff",
+                  "nameShort": "301",
+                  "textColor": "#0054a6",
+                  "vehicle": {
+                    "name": {
+                      "text": "Streetcar"
+                    },
+                    "type": "TRAM",
+                    "iconUri": "//maps.gstatic.com/mapfiles/transit/iw2/6/tram2.png"
+                  }
+                },
+                "stopCount": 47
+              },
+              "travelMode": "TRANSIT"
+            },
+            {
+              "distanceMeters": 30,
+              "staticDuration": "24s",
+              "polyline": {
+                "encodedPolyline": "}gliGtvocNb@O"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6494326,
+                  "longitude": -79.38426749999999
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.6492514,
+                  "longitude": -79.38419209999999
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head south on York St toward Adelaide St W"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "30 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "WALK"
+            },
+            {
+              "distanceMeters": 172,
+              "staticDuration": "141s",
+              "polyline": {
+                "encodedPolyline": "yfliGdvocN{AcLJEK?"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 43.6492514,
+                  "longitude": -79.38419209999999
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 43.649709900000005,
+                  "longitude": -79.3820558
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_LEFT",
+                "instructions": "Turn left onto Adelaide St W\nDestination will be on the left"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.2 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "WALK"
+            }
+          ],
+          "localizedValues": {
+            "distance": {
+              "text": "38.0 km"
+            },
+            "duration": {
+              "text": "2 hours 13 mins"
+            },
+            "staticDuration": {
+              "text": "2 hours 13 mins"
+            }
+          },
+          "stepsOverview": {
+            "multiModalSegments": [
+              {
+                "stepStartIndex": 0,
+                "stepEndIndex": 0,
+                "navigationInstruction": {
+                  "instructions": "Walk to Laird Rd At Turnstone Cres"
+                },
+                "travelMode": "WALK"
+              },
+              {
+                "stepStartIndex": 1,
+                "stepEndIndex": 1,
+                "navigationInstruction": {
+                  "instructions": "Bus towards 1 E Dundas To Kipling Terminal"
+                },
+                "travelMode": "TRANSIT"
+              },
+              {
+                "stepStartIndex": 2,
+                "stepEndIndex": 7,
+                "navigationInstruction": {
+                  "instructions": "Walk to Kipling Station at Bus Bay 6"
+                },
+                "travelMode": "WALK"
+              },
+              {
+                "stepStartIndex": 8,
+                "stepEndIndex": 8,
+                "navigationInstruction": {
+                  "instructions": "Bus towards Kipling South to Lake Shore"
+                },
+                "travelMode": "TRANSIT"
+              },
+              {
+                "stepStartIndex": 9,
+                "stepEndIndex": 9,
+                "navigationInstruction": {
+                  "instructions": "Walk to Lake Shore Blvd West at Colonel Samuel Smith Park Dr"
+                },
+                "travelMode": "WALK"
+              },
+              {
+                "stepStartIndex": 10,
+                "stepEndIndex": 10,
+                "navigationInstruction": {
+                  "instructions": "Streetcar towards Queen to Neville Park"
+                },
+                "travelMode": "TRANSIT"
+              },
+              {
+                "stepStartIndex": 11,
+                "stepEndIndex": 12,
+                "travelMode": "WALK"
+              }
+            ]
+          }
+        }
+      ],
+      "distanceMeters": 38031,
+      "duration": "7972s",
+      "staticDuration": "7972s",
+      "polyline": {
+        "encodedPolyline": "mnshGjekeNsAyAP]kD{D@CIRiFaGqBwBvBeDFYdBoCTE`EiGjBsCwHqIwH}HsMyNwDgEuBoCcBkBuA{AqEeF_IyI_FyFIEG@kBqBCQgFiGsCgDcAuAcCwCw@y@cCwCmByBwCkD_CiCmDiE{@sAeCqF}E_LsBeFGKMKiBmEw@cBqAcC{@oAGYQ_@qDoFkAoAeA{@_Ao@}@i@kEmByDsA]GmCeAoB{@u@g@uAw@cB}AkC}C[EaD}DOg@aOiQ{ReVqO_R{@iAk@e@MAqA{AAYw@cAaKoLcDgDgGgHqLyNaTsXOM_@U_CoCsPmS}NkQy@}@kP_Sw@cA_CmCeYe]}@_AK[k@u@iAmAeNeP}IeKo@cAoFgGSAiJoKm@q@i@e@_AsAsByBsCeDcIyIuA_BcN}NySiV{JgLIYe@i@kHkJOMM@mGeH}I{J_CeCmG}GwCcDgFqFgJsJ{CmDyE}EcBaByKaMmFiFcDmD{@mA}@}Au@gBm@{BAq@qA{IqA{J?OuB}P]_C}Hwb@}@qGk@cEIIGAe@yDe@oCa@_Bi@wAyEgLaAoBeAuAeK}K{CqCJ[@A]W[]mCuBuAkAe@c@k@a@oC}BYYv@sAv@q@b@W`@KA{@Ks@CYNYeAoAV_AKP{BoCe@s@O@MHIJqBdAk@r@a@c@COGq@lTiG`Bu@bBu@`A[HShv@iVvIiBjQwFRFlJeDhBa@~G{@~Aa@bAa@|AeALDb@GH@BUXUHCC[fCkBDMfBq@rw@yVLBvFgBHMh_@iLvCaADRGDTK@Fd@O?GD\\qFu`@_ByJGg@SsDc@oAi@mEk@}D]mEa@eAg@sD[mE]aAi@uD[gE]gAk@iEWuD_@cAI{@MyDSeESyAuA{Ew@_Ci@aCqAuB_@w@mA_Bi@k@uAaAsAo@eCaAs@Sq@MqAOoEm@y@RuGUuBUgAa@y@LaIo@aB_@aA}@oASoDuBy@K{BcA{G{D{@CaCcAiCyAy@Wq@a@m@m@i@y@[mAeA_HUsAkAaBcAgA}AcAqAs@}BaBc@_@wDqBuJyD{EgBcEsAaCk@[GaAa@{@y@wAOk@?iBTMDaAvAUNS@KCu@i@}@Yi@kEc@uAw@aAk@m@}AgAyBaBsC_DyFqF]_@g@{@GBuAwBaA{Bo@oBi@_CYqCMcD}AsOe@wCaCaLoAsGe@{CWyBu@uLWcWB{I?mBTyAjAyFtBiU?aAiA}Lc@uD_@{CgA_KyCcVuBkR}Eaa@iD_Zc@wAQuA]uE[iAy@aHs@_GByAe@iAk@cFQ_Ee@uAyAgLGaC_@iAwAmLK}Ca@uA{AcMGuB]mAo@cFWiE]sAkAaJQuBOoAg@}FyAwMuEy]s@yF{AqIeA{HUeE_@}@iAmI|DgAfDu@AIb@O{AcLJEK?"
+      },
+      "viewport": {
+        "low": {
+          "latitude": 43.522470399999996,
+          "longitude": -79.6887004
+        },
+        "high": {
+          "latitude": 43.651210899999995,
+          "longitude": -79.3820558
+        }
+      },
+      "travelAdvisory": {
+        "transitFare": {}
+      },
+      "localizedValues": {
+        "distance": {
+          "text": "38.0 km"
+        },
+        "duration": {
+          "text": "2 hours 13 mins"
+        },
+        "staticDuration": {
+          "text": "2 hours 13 mins"
+        },
+        "transitFare": {}
+      },
+      "routeLabels": [
+        "DEFAULT_ROUTE_ALTERNATE"
+      ]
+    }
+  ]
+}
