@@ -307,6 +307,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     paddingVertical: 12,
     alignItems: 'center',
+    marginBottom: 12
   },
   addText: { fontWeight: '800' },
   error: { color: '#b00020', marginTop: 6 },

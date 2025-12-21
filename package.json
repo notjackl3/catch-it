@@ -8,7 +8,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eas:build:ios:dev": "eas build --profile development --platform ios"
+    "eas:build:ios:dev": "eas build --profile development --platform ios",
+    "test:directions": "node tools/test-directions.mjs"
   },
   "dependencies": {
     "@react-native-community/datetimepicker": "8.4.4",
