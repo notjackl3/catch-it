@@ -4,6 +4,10 @@ import type { RouteOption } from '../api/google/routes';
 export type RootStackParamList = {
   PlanTrip: undefined;
   Results: {
+    startAt: {
+      mode: 'now' | 'custom';
+      startAtISO: string;
+    };
     stops: Array<{
       id: string;
       place: PlaceDetails;

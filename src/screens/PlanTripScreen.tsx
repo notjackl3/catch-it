@@ -26,6 +26,8 @@ type Nav = NativeStackNavigationProp<RootStackParamList, 'PlanTrip'>;
 
 function formatTime(d: Date): string {
     return d.toLocaleTimeString([], {
+        day: 'numeric',
+        month: 'numeric',
         hour: '2-digit',
         minute: '2-digit',
     });
@@ -39,12 +41,22 @@ type StopDraft = {
   dwellMinutes: number; // used when this stop is the FROM of a leg (i.e. not last)
 };
 
+type StartTimeMode = 'now' | 'custom';
+
 function makeId(): string {
   return `${Date.now()}-${Math.random().toString(16).slice(2)}`;
 }
 
 export function PlanTripScreen() {
   const nav = useNavigation<Nav>();
+
+  const [startTimeMode, setStartTimeMode] = useState<StartTimeMode>('now');
+  const [customStartAt, setCustomStartAt] = useState<Date>(new Date());
+  const [activeDatePicker, setActiveDatePicker] = useState<
+    | { kind: 'start' }
+    | { kind: 'stop'; stopIndex: number }
+    | null
+  >(null);
 
   const [stops, setStops] = useState<StopDraft[]>(() => [
     { id: makeId(), text: '', place: null, arriveBy: null, dwellMinutes: 0 }, // start
@@ -92,7 +104,6 @@ export function PlanTripScreen() {
 
   const [searching, setSearching] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [pickerStopIndex, setPickerStopIndex] = useState<number | null>(null);
 
   function addStop() {
     setStops((cur) => [
@@ -121,18 +132,29 @@ export function PlanTripScreen() {
     setError(null);
     try {
       const legs: RootStackParamList['Results']['legs'] = [];
+      const startAt = startTimeMode === 'now' ? new Date() : customStartAt;
       for (let i = 0; i < stops.length - 1; i++) {
         const from = stops[i].place!;
         const to = stops[i + 1].place!;
         const arriveBy = stops[i + 1].arriveBy!;
         const dwellMinutesAtFromStop = i === 0 ? 0 : (stops[i].dwellMinutes ?? 5);
 
-        const routes = await computeRoutes({
+        let routes = await computeRoutes({
           origin: from.location,
           destination: to.location,
           timeMode: 'arriveBy',
           time: arriveBy,
         });
+
+        // Apply start time constraint only to the first leg:
+        // If a route's computed startAt is before the chosen startAt, hide it.
+        if (i === 0) {
+          const minStartMs = startAt.getTime();
+          routes = routes.filter((r) => {
+            const ms = r.startAtISO ? new Date(r.startAtISO).getTime() : NaN;
+            return Number.isFinite(ms) ? ms >= minStartMs : true;
+          });
+        }
 
         legs.push({
           id: `${i}`,
@@ -145,6 +167,7 @@ export function PlanTripScreen() {
       }
 
       nav.navigate('Results', {
+        startAt: { mode: startTimeMode, startAtISO: startAt.toISOString() },
         stops: stops.map((s, idx) => ({
           id: s.id,
           place: s.place!,
@@ -162,6 +185,25 @@ export function PlanTripScreen() {
 
   return (
     <ScrollView style={styles.container}>
+      <Text style={styles.title}>Start time</Text>
+
+      <View style={styles.row}>
+        <Pressable
+          style={[styles.pill, startTimeMode === 'now' && styles.pillActive]}
+          onPress={() => setStartTimeMode('now')}
+        >
+          <Text style={startTimeMode === 'now' ? styles.pillTextActive : styles.pillText}>Now</Text>
+        </Pressable>
+        <Pressable
+          style={[styles.pill, startTimeMode === 'custom' && styles.pillActive]}
+          onPress={() => setStartTimeMode('custom')}
+        >
+          <Text style={startTimeMode === 'custom' ? styles.pillTextActive : styles.pillText}>
+            Custom
+          </Text>
+        </Pressable>
+      </View>
+
       {stops.map((s, idx) => {
         const isStart = idx === 0;
         const isLast = idx === stops.length - 1;
@@ -193,6 +235,15 @@ export function PlanTripScreen() {
               autoCapitalize="none"
             />
 
+            {startTimeMode === 'custom' ? (
+            <Pressable
+                  style={styles.timeButton}
+                  onPress={() => setActiveDatePicker({ kind: 'stop', stopIndex: idx })}
+                >
+                  <Text style={styles.timeButtonText}>{formatTime(s.arriveBy ?? new Date())}</Text>
+            </Pressable>
+            ) : null}
+
             {activeStopIndex === idx && acQuery.isFetching ? <ActivityIndicator /> : null}
             {activeStopIndex === idx
               ? suggestions.slice(0, 5).map((p) => (
@@ -209,7 +260,10 @@ export function PlanTripScreen() {
             {!isStart ? (
               <>
                 <Text style={styles.label}>Arrive by</Text>
-                <Pressable style={styles.timeButton} onPress={() => setPickerStopIndex(idx)}>
+                <Pressable
+                  style={styles.timeButton}
+                  onPress={() => setActiveDatePicker({ kind: 'stop', stopIndex: idx })}
+                >
                   <Text style={styles.timeButtonText}>{formatTime(s.arriveBy ?? new Date())}</Text>
                 </Pressable>
 
@@ -242,14 +296,25 @@ export function PlanTripScreen() {
         <Text style={styles.addText}>+ Add stop</Text>
       </Pressable>
 
-      {pickerStopIndex !== null ? (
+      {activeDatePicker ? (
         <DateTimePicker
-          value={stops[pickerStopIndex]?.arriveBy ?? new Date()}
+          value={
+            activeDatePicker.kind === 'start'
+              ? customStartAt
+              : (stops[activeDatePicker.stopIndex]?.arriveBy ?? new Date())
+          }
           mode="datetime"
           onChange={(_, d) => {
-            const idx = pickerStopIndex;
-            setPickerStopIndex(null);
+            const current = activeDatePicker;
+            setActiveDatePicker(null);
             if (!d) return;
+
+            if (current.kind === 'start') {
+              setCustomStartAt(d);
+              return;
+            }
+
+            const idx = current.stopIndex;
             setStops((cur) => cur.map((x, i) => (i === idx ? { ...x, arriveBy: d } : x)));
           }}
         />
@@ -270,7 +335,19 @@ export function PlanTripScreen() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, padding: 16, gap: 8, backgroundColor: '#fff' },
-  title: { fontSize: 18, fontWeight: '800' },
+  title: { fontSize: 18, fontWeight: '800', marginBottom: 12 },
+  row: { flexDirection: 'row', gap: 10, marginBottom: 8 },
+  pill: {
+    flex: 1,
+    paddingVertical: 5,
+    borderRadius: 999,
+    borderWidth: 1,
+    borderColor: '#ddd',
+    alignItems: 'center',
+  },
+  pillActive: { backgroundColor: '#111', borderColor: '#111' },
+  pillText: { color: '#111' },
+  pillTextActive: { color: '#fff' },
   stopCard: { borderWidth: 1, borderColor: '#eee', borderRadius: 12, padding: 12, gap: 8, marginBottom: 20 },
   stopHeaderRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   stopTitle: { fontWeight: '800' },

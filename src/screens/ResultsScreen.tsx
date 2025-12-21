@@ -47,7 +47,7 @@ function estimateDepartMs(arriveByISO: string, durationSeconds?: number): number
 
 export function ResultsScreen() {
   const route = useRoute<R>();
-  const { stops, legs } = route.params;
+  const { stops, legs, startAt } = route.params;
   const start = stops[0]?.place;
   const end = stops[stops.length - 1]?.place;
 
@@ -65,6 +65,9 @@ export function ResultsScreen() {
       <View style={styles.header}>
         <Text style={styles.title} numberOfLines={2}>
           {start?.name ?? 'Start'} → {end?.name ?? 'End'}
+        </Text>
+        <Text style={styles.sub}>
+          Start {startAt.mode === 'now' ? 'now' : 'at'}: {fmtDateTime(startAt.startAtISO)}
         </Text>
       </View>
 

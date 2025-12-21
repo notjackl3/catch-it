@@ -49,6 +49,12 @@ export type RouteOption = {
    *  - "8:05 AM Take Bus 36 toward South Common from Stop A → Stop B (arrive 8:25 AM)"
    */
   keyInstructions: string[];
+  /**
+   * Best-effort "start at" for this route.
+   * - For transit: departure time of the first TRANSIT step (from transitDetails)
+   * - Fallback: if request used arrivalTime and route duration is present, estimate = arrivalTime - duration
+   */
+  startAtISO?: string;
 };
 
 function parseDurationSeconds(duration?: string): number | undefined {
@@ -74,6 +80,22 @@ function timeTextFromTransitDetails(td: any, which: 'departure' | 'arrival'): st
     return d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
   }
   return undefined;
+}
+
+function firstTransitDepartureISO(steps: RouteStep[]): string | undefined {
+  for (const s of steps) {
+    if (s.travelMode !== 'TRANSIT') continue;
+    const iso = s.transitDetails?.stopDetails?.departureTime;
+    if (typeof iso === 'string' && iso.length) return iso;
+  }
+  return undefined;
+}
+
+function estimateStartAtISOFromArrival(arrival: Date, durationSeconds?: number): string | undefined {
+  if (!durationSeconds) return undefined;
+  const ms = arrival.getTime() - durationSeconds * 1000;
+  if (!Number.isFinite(ms)) return undefined;
+  return new Date(ms).toISOString();
 }
 
 function buildKeyInstructions(steps: RouteStep[]): string[] {
@@ -207,15 +229,20 @@ export async function computeRoutes(params: ComputeRoutesParams): Promise<RouteO
         }))
       ) ?? [];
     const keyInstructions = buildKeyInstructions(steps);
+    const durationSeconds = parseDurationSeconds(r.duration);
+    const startAtISO =
+      firstTransitDepartureISO(steps) ??
+      (params.timeMode === 'arriveBy' ? estimateStartAtISOFromArrival(params.time, durationSeconds) : params.time.toISOString());
 
     return {
       id: String(idx),
-      durationSeconds: parseDurationSeconds(r.duration),
+      durationSeconds,
       distanceMeters: r.distanceMeters,
       encodedPolyline: encoded,
       path: encoded ? decodePolyline(encoded) : undefined,
       steps,
       keyInstructions,
+      startAtISO,
     };
   });
 }
