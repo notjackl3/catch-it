@@ -1,5 +1,6 @@
-function requiredEnv(name: string): string {
-  const val = process.env[name];
+import { Platform } from 'react-native';
+
+function requiredEnv(val: string | undefined, name: string): string {
   if (!val) {
     throw new Error(
       `Missing env var ${name}. Add it to your .env and/or EAS Secrets.`
@@ -8,15 +9,23 @@ function requiredEnv(name: string): string {
   return val;
 }
 
-function optionalEnv(name: string): string | undefined {
-  const val = process.env[name];
+function optionalEnv(val: string | undefined): string | undefined {
   return val && val.length > 0 ? val : undefined;
 }
 
 export const ENV = {
-  // Optional for Expo Go mode (we removed the native map screen).
-  GOOGLE_MAPS_IOS_KEY: optionalEnv('EXPO_PUBLIC_GOOGLE_MAPS_IOS_KEY'),
-  GOOGLE_API_KEY: requiredEnv('EXPO_PUBLIC_GOOGLE_API_KEY'),
+  // We must access process.env.EXPO_PUBLIC_* variables statically (e.g. process.env.EXPO_PUBLIC_KEY)
+  // because the web bundler replaces these exact strings with their values at build time.
+  // Dynamic access like process.env[name] will fail in static production builds.
+  GOOGLE_API_KEY: requiredEnv(
+    process.env.EXPO_PUBLIC_GOOGLE_API_KEY,
+    'EXPO_PUBLIC_GOOGLE_API_KEY'
+  ),
+  GOOGLE_MAPS_IOS_KEY:
+    Platform.OS === 'ios'
+      ? requiredEnv(
+          process.env.EXPO_PUBLIC_GOOGLE_MAPS_IOS_KEY,
+          'EXPO_PUBLIC_GOOGLE_MAPS_IOS_KEY'
+        )
+      : optionalEnv(process.env.EXPO_PUBLIC_GOOGLE_MAPS_IOS_KEY),
 } as const;
-
-

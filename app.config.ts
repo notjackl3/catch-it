@@ -33,5 +33,9 @@ export default ({ config }: ConfigContext): ExpoConfig => {
         },
       } as any,
     },
+    web: {
+      bundler: "metro",
+      output: "single",
+    },
   };
 };
