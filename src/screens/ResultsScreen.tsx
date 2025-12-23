@@ -1,7 +1,9 @@
-import { Linking, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Alert, Linking, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useRoute } from '@react-navigation/native';
 import type { RouteProp } from '@react-navigation/native';
 import { useState } from 'react';
+import * as Print from 'expo-print';
+import * as Sharing from 'expo-sharing';
 
 import type { RootStackParamList } from '../navigation/types';
 
@@ -20,6 +22,11 @@ function renderBoldTokens(line: string): Array<{ text: string; bold: boolean }> 
   }
   if (last < line.length) out.push({ text: line.slice(last), bold: false });
   return out.length ? out : [{ text: line, bold: false }];
+}
+
+function renderBoldTokensHtml(line: string): string {
+  const re = /(\b\d{1,2}:\d{2}\s?(?:AM|PM)?\b|\b\d+\b)/gi;
+  return line.replace(re, '<strong>$1</strong>');
 }
 
 function fmtDuration(seconds?: number): string {
@@ -86,15 +93,111 @@ export function ResultsScreen() {
     return firstLeg && firstRoute ? `${firstLeg.id}:${firstRoute.id}` : null;
   });
 
+  const exportToPdf = async () => {
+    try {
+      const html = `
+        <html>
+          <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+            <style>
+              body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding: 20px; color: #111; line-height: 1.5; }
+              h1 { font-size: 24px; margin-bottom: 5px; color: #000; }
+              .subtitle { font-size: 14px; color: #666; margin-bottom: 30px; }
+              .leg { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+              .leg-header { font-size: 18px; fontWeight: bold; margin-bottom: 10px; color: #2563eb; }
+              .leg-timing { font-size: 14px; color: #4169e1; margin-bottom: 10px; }
+              .route-info { background: #fafafa; border: 1px solid #eee; border-radius: 8px; padding: 15px; margin-bottom: 10px; }
+              .route-title { font-size: 16px; font-weight: bold; margin-bottom: 5px; }
+              .route-meta { font-size: 13px; color: #444; margin-bottom: 10px; }
+              .steps { margin-top: 10px; }
+              .step { margin-bottom: 8px; font-size: 14px; display: flex; }
+              .step-num { font-weight: bold; margin-right: 10px; min-width: 20px; }
+              .warning { color: #9a3412; font-size: 12px; margin-top: 5px; font-style: italic; }
+              .maps-link { display: inline-block; margin-top: 15px; color: #2563eb; text-decoration: none; font-weight: bold; font-size: 14px; }
+            </style>
+          </head>
+          <body>
+            <h1>${start?.name ?? 'Start'} &rarr; ${end?.name ?? 'End'}</h1>
+            <p class="subtitle">Generated on ${new Date().toLocaleDateString()} at ${new Date().toLocaleTimeString()}<br/>
+            Start ${startAt.mode === 'now' ? 'now' : 'at'}: ${fmtDateTime(startAt.startAtISO)}</p>
+
+            ${legs.map((leg, legIdx) => {
+              const from = stops.find((s) => s.id === leg.fromStopId)?.place;
+              const to = stops.find((s) => s.id === leg.toStopId)?.place;
+              const chosenRouteId = chosenByLegId[leg.id];
+              const chosenRoute = chosenRouteId 
+                ? leg.routes.find(r => r.id === chosenRouteId)
+                : leg.routes[0]; // fallback to first if none chosen for PDF
+              
+              if (!chosenRoute) return '';
+
+              const mapsUrl = from && to ? googleMapsDirectionsUrl({
+                origin: from.location,
+                destination: to.location,
+                travelMode: 'transit',
+                departureTimeISO: chosenRoute.startAtISO ?? startAt.startAtISO,
+              }) : null;
+
+              return `
+                <div class="leg">
+                  <div class="leg-header">${from?.name ?? 'From'} &rarr; ${to?.name ?? 'To'}</div>
+                  <div class="leg-timing">
+                    Arrive at ${to?.name ?? 'this stop'} at ${fmtDateTime(leg.arriveByISO)}
+                    ${leg.dwellMinutesAtFromStop > 0 ? ` (Stay for ${leg.dwellMinutesAtFromStop} min)` : ''}
+                  </div>
+                  
+                  <div class="route-info">
+                    <div class="route-title">${chosenRouteId ? 'Chosen Option' : 'Option 1 (Default)'} - ${fmtDuration(chosenRoute.durationSeconds)}</div>
+                    <div class="route-meta">${typeof chosenRoute.distanceMeters === 'number' ? `${(chosenRoute.distanceMeters / 1000).toFixed(1)} km` : ''}</div>
+                    
+                    <div class="steps">
+                      ${chosenRoute.keyInstructions.length > 0 
+                        ? chosenRoute.keyInstructions.map((step, i) => `
+                            <div class="step">
+                              <span class="step-num">${i + 1}</span>
+                              <span>${renderBoldTokensHtml(step)}</span>
+                            </div>
+                          `).join('')
+                        : '<div class="step">No instructions available.</div>'
+                      }
+                    </div>
+                  </div>
+                  ${mapsUrl ? `<a href="${mapsUrl}" class="maps-link">Open in Google Maps</a>` : ''}
+                </div>
+              `;
+            }).join('')}
+          </body>
+        </html>
+      `;
+
+      if (Platform.OS === 'web') {
+        await Print.printAsync({ html });
+      } else {
+        const { uri } = await Print.printToFileAsync({ html });
+        await Sharing.shareAsync(uri, { UTI: '.pdf', mimeType: 'application/pdf' });
+      }
+    } catch (error) {
+      console.error('PDF Export Error:', error);
+      Alert.alert('Error', 'Failed to generate PDF export.');
+    }
+  };
+
   return (
     <ScrollView style={styles.container} contentContainerStyle={styles.content}>
       <View style={styles.header}>
-        <Text style={styles.title} numberOfLines={2}>
-          {start?.name ?? 'Start'} → {end?.name ?? 'End'}
-        </Text>
-        <Text style={styles.sub}>
-          Start {startAt.mode === 'now' ? 'now' : 'at'}: {fmtDateTime(startAt.startAtISO)}
-        </Text>
+        <View style={styles.headerTop}>
+          <View style={{ flex: 1 }}>
+            <Text style={styles.title} numberOfLines={2}>
+              {start?.name ?? 'Start'} → {end?.name ?? 'End'}
+            </Text>
+            <Text style={styles.sub}>
+              Start {startAt.mode === 'now' ? 'now' : 'at'}: {fmtDateTime(startAt.startAtISO)}
+            </Text>
+          </View>
+          <Pressable style={styles.exportButton} onPress={exportToPdf}>
+            <Text style={styles.exportButtonText}>Export PDF</Text>
+          </Pressable>
+        </View>
       </View>
 
       {legs.length === 0 ? (
@@ -259,8 +362,27 @@ export function ResultsScreen() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#fff' },
-  content: { padding: 16, gap: 12 },
+  content: { 
+    padding: 16, 
+    gap: 12,
+    maxWidth: 600,
+    width: '100%',
+    alignSelf: 'center',
+  },
   header: { gap: 4 },
+  headerTop: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start' },
+  exportButton: {
+    backgroundColor: '#000',
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    borderRadius: 8,
+    marginLeft: 10,
+  },
+  exportButtonText: {
+    color: '#fff',
+    fontSize: 12,
+    fontWeight: '700',
+  },
   title: { fontSize: 16, fontWeight: '700' },
   sub: { fontSize: 12, color: '#666' },
   empty: { color: '#b00020', marginTop: 8 },

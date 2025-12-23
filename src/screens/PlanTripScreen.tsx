@@ -186,7 +186,7 @@ export function PlanTripScreen() {
   }
 
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container} contentContainerStyle={styles.content}>
       <Text style={styles.title}>Start time</Text>
 
       <View style={styles.row}>
@@ -357,7 +357,15 @@ export function PlanTripScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 16, gap: 8, backgroundColor: '#fff' },
+  container: { flex: 1, backgroundColor: '#fff' },
+  content: { 
+    padding: 16, 
+    gap: 8, 
+    maxWidth: 600,
+    width: '100%',
+    alignSelf: 'center',
+    paddingBottom: 40,
+  },
   title: { fontSize: 18, fontWeight: '800', marginBottom: 12 },
   row: { flexDirection: 'row', gap: 10, marginBottom: 8 },
   inlinePickerBlock: { gap: 8, marginBottom: 10 },
